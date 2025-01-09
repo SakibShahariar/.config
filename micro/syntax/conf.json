@@ -1,0 +1,37 @@
+{
+  "name": "Conf",
+  "filetypes": [
+    "conf",
+    "ini"
+  ],
+  "patterns": [
+    {
+      "name": "comment.line.semicolon.conf",
+      "match": "^\\s*;.*$"
+    },
+    {
+      "name": "comment.line.hash.conf",
+      "match": "^\\s*#.*$"
+    },
+    {
+      "name": "keyword.operator.conf",
+      "match": "="
+    },
+    {
+      "name": "constant.language.conf",
+      "match": "(^\\s*\\[[^\\]]+\\])"
+    },
+    {
+      "name": "string.quoted.double.conf",
+      "match": "\"[^\"]*\""
+    },
+    {
+      "name": "string.quoted.single.conf",
+      "match": "'[^']*'"
+    },
+    {
+      "name": "variable.parameter.conf",
+      "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+    }
+  ]
+}

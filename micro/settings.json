@@ -1,0 +1,7 @@
+{
+    "*.conf": {
+        "filetype": "ini"
+    },
+    "clipboardcmd": "wl-copy",
+    "colorscheme": "gruvbox"
+}
