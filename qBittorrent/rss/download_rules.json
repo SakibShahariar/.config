@@ -75,6 +75,44 @@
         },
         "useRegex": false
     },
+    "Dr. Stone S4": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
+        ],
+        "assignedCategory": "",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "09 Jan 2025 15:43:25 +0000",
+        "mustContain": "Dr. Stone S4",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1
+        },
+        "useRegex": false
+    },
     "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka": {
         "addPaused": null,
         "affectedFeeds": [
@@ -236,7 +274,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "27 Dec 2024 23:45:43 +0000",
+        "lastMatch": "10 Jan 2025 05:40:13 +0000",
         "mustContain": "Link Click",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -350,7 +388,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "19 Dec 2024 20:18:49 +0000",
+        "lastMatch": "09 Jan 2025 20:26:17 +0000",
         "mustContain": "Rurouni Kenshin",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [

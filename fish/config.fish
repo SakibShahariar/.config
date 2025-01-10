@@ -27,7 +27,7 @@ end
 
 # 🌟 Personalized Greeting Message
 function fish_greeting
-    typewrite "" 
+    #typewrite "" 
     typewrite " 🌞 Hello, " (whoami) "!"
     typewrite " Welcome back! Today is " (date '+%A, %B %d, %Y') "."
     typewrite " Remember, every day is a new opportunity to shine! 🚀"
@@ -44,6 +44,17 @@ function y
     rm -f -- "$tmp"
 end
 
+# Search files
+function fzf_files
+    set file (fzf)
+    if test -n "$file"
+        vim $file
+    end
+end
+
+bind \cf 'fzf_files'  # Ctrl+F to trigger fzf_files
+
+
 # 🎨 Oh-My-Posh Theme Initialization
 oh-my-posh init fish --config $HOME/.poshthemes/1_shell.omp.json | source
 
@@ -58,6 +69,7 @@ alias fish_refresh="source ~/.config/fish/config.fish"
 alias anime="fastanime --icons --fzf --preview anilist"  
 alias starwars="telnet towel.blinkenlights.nl"
 alias clock="tty-clock -c -C 2"
+alias kitty_edit="nano .config/kitty/kitty.conf"
 
 # 🖥️ Interactive Session Configuration
 if status is-interactive
