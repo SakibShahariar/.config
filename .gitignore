@@ -1,9 +1,11 @@
 /*
 
 !/autostart/
+!/btop/
 !/burn-my-windows/
 !/dconf/
 !/fastanime/
+!/fastfetch/
 !/fish/
 !/gedit/
 !/ghostty/
@@ -13,6 +15,7 @@
 !/qBittorrent/
 !/superfile/
 !/vlc/
+!/yazi/
 
 !/.gitignore
 
