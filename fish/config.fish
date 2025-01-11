@@ -34,6 +34,7 @@ function fish_greeting
     typewrite ""
 end
 
+
 # 🌱 Yazi with Custom CWD
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
@@ -70,6 +71,9 @@ alias anime="fastanime --icons --fzf --preview anilist"
 alias starwars="telnet towel.blinkenlights.nl"
 alias clock="tty-clock -c -C 2"
 alias kitty_edit="nano .config/kitty/kitty.conf"
+alias ff="fastfetch"
+alias cp='rsync -a --progress'
+
 
 # 🖥️ Interactive Session Configuration
 if status is-interactive
@@ -87,3 +91,4 @@ set -x PATH /usr/bin:/usr/local/bin $PATH
 zoxide init fish | source
 
 source $HOME/.cargo/env
+set -gx EDITOR micro  # or your preferred editor

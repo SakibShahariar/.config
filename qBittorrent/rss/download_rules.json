@@ -417,6 +417,44 @@
         },
         "useRegex": false
     },
+    "Sakamoto Days": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=DKB0512"
+        ],
+        "assignedCategory": "",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "11 Jan 2025 16:29:00 +0000",
+        "mustContain": "Sakamoto Days",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1
+        },
+        "useRegex": false
+    },
     "Shangri-La Frontier": {
         "addPaused": null,
         "affectedFeeds": [
@@ -428,6 +466,44 @@
         "ignoreDays": 0,
         "lastMatch": "22 Dec 2024 12:41:38 +0000",
         "mustContain": "Shangri-La Frontier",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1
+        },
+        "useRegex": false
+    },
+    "The Apothecary Diaries": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
+        ],
+        "assignedCategory": "",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "10 Jan 2025 19:14:14 +0000",
+        "mustContain": "Kusuriya no Hitorigoto",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],
