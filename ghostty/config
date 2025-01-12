@@ -1,23 +1,27 @@
-# The syntax is "key = value". The whitespace around the
-# equals doesn't matter.
-# background = 22202c
-# foreground = ffffff
+# ✨ General Setup
+# ----------------------
+font-family =            # Empty values reset to default
 
-# Comments start with a `#` and are only valid on their own line.
-# Blank lines are ignored!
+# 🎨 Theme and Appearance
+# ----------------------
+theme = GruvboxDarkHard
+title = Ghostty
 
+# 🖱️ Mouse and Clipboard Settings
+# ----------------------
+mouse-hide-while-typing = true
+clipboard-write = allow
+clipboard-paste-protection = false
+copy-on-select = clipboard
+
+# 🔧 Window Settings
+# ----------------------
+window-padding-balance = false
+window-padding-x = 10
+window-padding-y = 10
+
+# ⌨️ Keybindings
+# ----------------------
 keybind = ctrl+z=close_surface
 keybind = ctrl+d=new_split:right
 
-# Empty values reset the configuration to the default value
-font-family =
-
-theme = rose-pine
-
-mouse-hide-while-typing = true
-
-clipboard-write = allow
-
-clipboard-paste-protection = false
-
-copy-on-select = true

@@ -8,7 +8,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "21 Dec 2024 19:13:13 +0000",
+        "lastMatch": "11 Jan 2025 20:04:14 +0000",
         "mustContain": "Ao no Exorcist",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -46,7 +46,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "27 Dec 2024 16:32:59 +0000",
+        "lastMatch": "11 Jan 2025 18:08:09 +0000",
         "mustContain": "Ao no Hako",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -350,7 +350,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "14 Dec 2024 17:22:18 +0000",
+        "lastMatch": "11 Jan 2025 19:44:22 +0000",
         "mustContain": "Chi.",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -426,7 +426,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "11 Jan 2025 16:29:00 +0000",
+        "lastMatch": "11 Jan 2025 20:16:13 +0000",
         "mustContain": "Sakamoto Days",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -466,6 +466,44 @@
         "ignoreDays": 0,
         "lastMatch": "22 Dec 2024 12:41:38 +0000",
         "mustContain": "Shangri-La Frontier",
+        "mustNotContain": "",
+        "previouslyMatchedEpisodes": [
+        ],
+        "priority": 0,
+        "savePath": "",
+        "smartFilter": false,
+        "torrentContentLayout": null,
+        "torrentParams": {
+            "category": "",
+            "download_limit": -1,
+            "download_path": "",
+            "inactive_seeding_time_limit": -2,
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "",
+            "seeding_time_limit": -2,
+            "share_limit_action": "Default",
+            "skip_checking": false,
+            "ssl_certificate": "",
+            "ssl_dh_params": "",
+            "ssl_private_key": "",
+            "tags": [
+            ],
+            "upload_limit": -1
+        },
+        "useRegex": false
+    },
+    "Solo Leveling": {
+        "addPaused": null,
+        "affectedFeeds": [
+            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
+        ],
+        "assignedCategory": "",
+        "enabled": true,
+        "episodeFilter": "",
+        "ignoreDays": 0,
+        "lastMatch": "11 Jan 2025 19:14:59 +0000",
+        "mustContain": "Solo Leveling",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],

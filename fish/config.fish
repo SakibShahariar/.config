@@ -1,20 +1,42 @@
-# ✨ Alias Customization - for smooth workflow
-alias nano='micro'    
-# Make nano open in micro to avoid conflicts
+# ✨ General Setup
+# ---------------------
+alias nano='micro'       # Make nano open in micro
+export MICRO_TRUECOLOR=1 # Enable true color support in Micro
+set -gx EDITOR micro     # Set default editor to micro
 
-# 🛠️ Sudo Function Override - nano to micro with sudo
+# 🧩 Custom Path Modification
+set -x PATH /usr/bin /usr/local/bin $PATH
+
+# 🎨 Oh-My-Posh Theme Initialization
+oh-my-posh init fish --config $HOME/.poshthemes/1_shell.omp.json | source
+
+# 🚀 Zoxide Setup for Fast Directory Navigation
+zoxide init fish | source
+
+# 🔧 Cargo Environment
+source $HOME/.cargo/env
+
+# 🌟 Greeting Message
+# ---------------------
+function fish_greeting
+    typewrite " 🌞 Hello, " (whoami) "!"
+    typewrite " Welcome back! Today is " (date '+%A, %B %d, %Y') "."
+    typewrite " Remember, every day is a new opportunity to shine! 🚀"
+    typewrite ""
+end
+
+# ⌨️ Helper Functions
+# ---------------------
+# Sudo override to use micro instead of nano
 function sudo
-    # Check if the first argument is nano
     if test $argv[1] = 'nano'
-        # Replace nano with micro
         command sudo micro $argv[2..-1]
     else
-        # Otherwise, call sudo normally
         command sudo $argv
     end
 end
 
-# ⌨️ Typewriter Function for a Cool Greeting
+# Typewriter effect for text output
 function typewrite
     for arg in $argv
         for i in (seq (string length $arg))
@@ -25,17 +47,7 @@ function typewrite
     echo ""
 end
 
-# 🌟 Personalized Greeting Message
-function fish_greeting
-    #typewrite "" 
-    typewrite " 🌞 Hello, " (whoami) "!"
-    typewrite " Welcome back! Today is " (date '+%A, %B %d, %Y') "."
-    typewrite " Remember, every day is a new opportunity to shine! 🚀"
-    typewrite ""
-end
-
-
-# 🌱 Yazi with Custom CWD
+# Yazi with custom current working directory
 function y
     set tmp (mktemp -t "yazi-cwd.XXXXXX")
     yazi $argv --cwd-file="$tmp"
@@ -45,50 +57,33 @@ function y
     rm -f -- "$tmp"
 end
 
-# Search files
+# FZF-based file search
 function fzf_files
     set file (fzf)
     if test -n "$file"
-        vim $file
+        micro $file
     end
 end
+bind \cf 'fzf_files'  # Bind Ctrl+F to trigger fzf_files
 
-bind \cf 'fzf_files'  # Ctrl+F to trigger fzf_files
-
-
-# 🎨 Oh-My-Posh Theme Initialization
-oh-my-posh init fish --config $HOME/.poshthemes/1_shell.omp.json | source
-
-# 🚀 Aliases for Quick Actions
-alias weather='curl wttr.in'   
-alias dotgit="git --git-dir=$HOME/.dotfiles_repo/ --work-tree=$HOME"  
-alias in="sudo dnf install"    
-alias update="sudo dnf update; flatpak update; sudo fwupdmgr update"  
-alias grub_refresh="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"  
-alias fish_edit="micro .config/fish/config.fish"  
-alias fish_refresh="source ~/.config/fish/config.fish"  
-alias anime="fastanime --icons --fzf --preview anilist"  
+# 🛠️ Aliases
+# ---------------------
+alias weather='curl wttr.in'
+alias dotgit="git --git-dir=$HOME/.dotfiles_repo/ --work-tree=$HOME"
+alias in="sudo dnf install"
+alias update="sudo dnf update; flatpak update; sudo fwupdmgr update"
+alias grub_refresh="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
+alias fish_edit="micro ~/.config/fish/config.fish"
+alias fish_refresh="source ~/.config/fish/config.fish"
+alias anime="fastanime --icons --fzf --preview anilist"
 alias starwars="telnet towel.blinkenlights.nl"
 alias clock="tty-clock -c -C 2"
-alias kitty_edit="nano .config/kitty/kitty.conf"
+alias kitty_edit="nano ~/.config/kitty/kitty.conf"
 alias ff="fastfetch"
 alias cp='rsync -a --progress'
 
-
-# 🖥️ Interactive Session Configuration
+# 🖥️ Interactive Session
+# ---------------------
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    # Commands for interactive sessions go here
 end
-
-# 🌈 Terminal Color Configuration for Micro
-export MICRO_TRUECOLOR=1  
-# Enable true color support in Micro
-
-# 🧩 Custom Path Modification for Smooth Workflow
-set -x PATH /usr/bin:/usr/local/bin $PATH
-
-# 🚀 Zoxide Setup for Fast Directory Navigation
-zoxide init fish | source
-
-source $HOME/.cargo/env
-set -gx EDITOR micro  # or your preferred editor
