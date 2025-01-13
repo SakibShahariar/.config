@@ -18,5 +18,9 @@
     "Nyaa": {
         "uid": "{4d288d26-bce5-46c3-92d0-5b928045372e}",
         "url": "https://nyaa.si/?page=rss"
+    },
+    "Trix": {
+        "uid": "{ca809c76-8f1f-4087-a07b-0a1eeef339b0}",
+        "url": "https://nyaa.si/?page=rss&u=NekoTrix"
     }
 }

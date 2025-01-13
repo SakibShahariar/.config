@@ -81,6 +81,7 @@ alias clock="tty-clock -c -C 2"
 alias kitty_edit="nano ~/.config/kitty/kitty.conf"
 alias ff="fastfetch"
 alias cp='rsync -a --progress'
+alias re='sudo dnf remove'
 
 # 🖥️ Interactive Session
 # ---------------------
