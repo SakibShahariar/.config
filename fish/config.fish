@@ -82,6 +82,7 @@ alias kitty_edit="nano ~/.config/kitty/kitty.conf"
 alias ff="fastfetch"
 alias cp='rsync -a --progress'
 alias re='sudo dnf remove'
+alias pipes="pipes.sh -t 3"
 
 # 🖥️ Interactive Session
 # ---------------------
