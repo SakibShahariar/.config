@@ -26,3 +26,11 @@
 
 2025/01/16 (14:29:13) | ===> btop++ v.1.4.0
 2025/01/16 (14:29:13) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/01/16 (21:32:57) | ===> btop++ v.1.4.0
+2025/01/16 (21:32:57) | WARNING: Intel GPU: Failed to initialize PMU
+
+2025/01/16 (22:35:58) | ===> btop++ v.1.4.0
+2025/01/16 (22:35:58) | WARNING: Intel GPU: Failed to initialize PMU
+2025/01/16 (22:41:35) | ERROR: Couldn't determine terminal size of "STDOUT_FILENO"!
+2025/01/16 (22:41:35) | ERROR: Couldn't determine terminal size of "/dev/tty"!
