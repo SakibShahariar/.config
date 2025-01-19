@@ -89,10 +89,6 @@ alias ff="fastfetch"
 alias cp='rsync -a --progress'
 alias re='sudo dnf remove'
 alias pipes="pipes.sh -t 3"
-alias add="git add ."
-alias com='git commit -m "commit"'
-alias push='git push origin main'
-
 
 # 🖥️ Interactive Session
 # ---------------------
