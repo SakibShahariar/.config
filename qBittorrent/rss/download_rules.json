@@ -1,42 +1,4 @@
 {
-    "Ameku M.D.: Doctor Detective": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "01 Jan 2025 20:17:45 +0000",
-        "mustContain": "Ameku Takao no Suiri Karte",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
     "Ao no Exorcist": {
         "addPaused": null,
         "affectedFeeds": [
@@ -46,7 +8,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "11 Jan 2025 20:04:14 +0000",
+        "lastMatch": "18 Jan 2025 19:49:24 +0000",
         "mustContain": "Ao no Exorcist",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -227,44 +189,6 @@
         },
         "useRegex": false
     },
-    "From Bureaucrat to Villainess": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=sff"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "18 Jan 2025 04:42:57 +0000",
-        "mustContain": "From Bureaucrat to Villainess 1080p",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
     "Honey Lemon Soda": {
         "addPaused": null,
         "affectedFeeds": [
@@ -388,7 +312,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "11 Jan 2025 18:35:45 +0000",
+        "lastMatch": "18 Jan 2025 19:29:09 +0000",
         "mustContain": "Medalist",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -578,7 +502,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "12 Jan 2025 12:46:22 +0000",
+        "lastMatch": "19 Jan 2025 11:22:23 +0000",
         "mustContain": "Shangri-La Frontier",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -616,7 +540,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "11 Jan 2025 19:14:59 +0000",
+        "lastMatch": "18 Jan 2025 18:47:46 +0000",
         "mustContain": "Solo Leveling",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -692,7 +616,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "12 Jan 2025 11:41:28 +0000",
+        "lastMatch": "19 Jan 2025 10:48:55 +0000",
         "mustContain": "Jibaku Shounen Hanako-kun",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [

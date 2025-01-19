@@ -5,7 +5,13 @@ export MICRO_TRUECOLOR=1 # Enable true color support in Micro
 set -gx EDITOR micro     # Set default editor to micro
 
 # 🧩 Custom Path Modification
-set -x PATH /usr/bin /usr/local/bin $PATH
+# Clear the previous PATH (if any)
+set -e PATH
+
+# Set the correct PATH including ~/Scripts first, followed by system directories
+set -Ux PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin
+
+
 
 # 🎨 Oh-My-Posh Theme Initialization
 oh-my-posh init fish --config $HOME/.poshthemes/1_shell.omp.json | source
