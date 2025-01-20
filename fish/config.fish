@@ -9,7 +9,7 @@ set -gx EDITOR micro     # Set default editor to micro
 set -e PATH
 
 # Set the correct PATH including ~/Scripts first, followed by system directories
-set -Ux PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin
+set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin
 
 
 
