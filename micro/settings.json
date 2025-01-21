@@ -1,7 +1,7 @@
 {
-    "*.conf": {
-        "filetype": "ini"
-    },
     "clipboardcmd": "wl-copy",
-    "colorscheme": "gruvbox-my"
+    "colorscheme": "catppuccin-mocha-transparent",
+    "filetype": {
+        "kitty.conf": "kitty"
+    }
 }
