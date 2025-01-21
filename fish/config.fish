@@ -78,7 +78,6 @@ bind \cf 'fzf_files'  # Bind Ctrl+F to trigger fzf_files
 alias weather='curl wttr.in'
 alias dotgit="git --git-dir=$HOME/.dotfiles_repo/ --work-tree=$HOME"
 alias in="sudo dnf install"
-alias update="sudo dnf clean all; sudo dnf update; flatpak update; sudo fwupdmgr update"
 alias grub_refresh="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias fish_edit="micro ~/.config/fish/config.fish"
 alias fish_refresh="source ~/.config/fish/config.fish"
