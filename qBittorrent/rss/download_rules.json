@@ -84,7 +84,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "16 Jan 2025 15:51:23 +0000",
+        "lastMatch": "23 Jan 2025 16:35:19 +0000",
         "mustContain": "Dr. Stone S4",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -160,7 +160,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "14 Jan 2025 18:09:14 +0000",
+        "lastMatch": "21 Jan 2025 21:06:30 +0000",
         "mustContain": "Hana wa Saku, Shura no Gotoku",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -198,7 +198,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "15 Jan 2025 19:34:33 +0000",
+        "lastMatch": "22 Jan 2025 19:03:03 +0000",
         "mustContain": "Honey Lemon Soda",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -236,7 +236,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "15 Jan 2025 15:54:07 +0000",
+        "lastMatch": "23 Jan 2025 14:19:34 +0000",
         "mustContain": "Ishura",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -350,7 +350,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "14 Jan 2025 17:38:05 +0000",
+        "lastMatch": "23 Jan 2025 01:44:43 +0000",
         "mustContain": "My Happy Marriage",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -426,7 +426,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "16 Jan 2025 20:29:35 +0000",
+        "lastMatch": "23 Jan 2025 21:19:14 +0000",
         "mustContain": "Rurouni Kenshin",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -656,44 +656,6 @@
         "ignoreDays": 0,
         "lastMatch": "19 Jan 2025 21:10:49 +0000",
         "mustContain": "Yami Shibai",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
-    "Zenshu": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "19 Jan 2025 18:28:02 +0000",
-        "mustContain": "Zenshu",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],
