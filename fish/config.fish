@@ -15,7 +15,16 @@ set -Ux PATH /sbin /usr/sbin $PATH
 
 
 # 🎨 Oh-My-Posh Theme Initialization
-oh-my-posh init fish --config $HOME/.poshthemes/night-owl.omp.json | source
+oh-my-posh init fish --config $HOME/.poshthemes/spaceship.omp.json | source
+# night-owl
+# 1_shell
+# spaceship
+# 
+# 
+# 
+# 
+# 
+# 
 
 # 🚀 Zoxide Setup for Fast Directory Navigation
 zoxide init fish | source

@@ -15,10 +15,10 @@ set -Ux PATH /sbin /usr/sbin $PATH
 
 
 # 🎨 Oh-My-Posh Theme Initialization
-oh-my-posh init fish --config $HOME/.poshthemes/1_shell.omp.json | source
+oh-my-posh init fish --config $HOME/.poshthemes/spaceship.omp.json | source
 # night-owl
 # 1_shell
-# 
+# spaceship
 # 
 # 
 # 
