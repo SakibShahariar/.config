@@ -12,13 +12,13 @@ set -e PATH
 set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin ~/sbin
 set -Ux PATH /sbin /usr/sbin $PATH
 
-
+starship init fish | source
 
 # 🎨 Oh-My-Posh Theme Initialization
-oh-my-posh init fish --config $HOME/.poshthemes/spaceship.omp.json | source
+# oh-my-posh init fish --config $HOME/.poshthemes/1_shell.omp.json | source
 # night-owl
 # 1_shell
-# spaceship
+# 
 # 
 # 
 # 
