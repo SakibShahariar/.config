@@ -1,10 +1,12 @@
 # ✨ General Setup
-# ---------------------
+# --------------------------------------------------------
+# Aliases and Editor Setup
 alias nano='micro'       # Make nano open in micro
 export MICRO_TRUECOLOR=1 # Enable true color support in Micro
 set -gx EDITOR micro     # Set default editor to micro
 
 # 🧩 Custom Path Modification
+# --------------------------------------------------------
 # Clear the previous PATH (if any)
 set -e PATH
 
@@ -12,28 +14,25 @@ set -e PATH
 set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin ~/sbin
 set -Ux PATH /sbin /usr/sbin $PATH
 
+# Starship Initialization (Prompt)
 starship init fish | source
 
-# 🎨 Oh-My-Posh Theme Initialization
+# 🎨 Oh-My-Posh Theme Initialization (optional)
+# --------------------------------------------------------
 # oh-my-posh init fish --config $HOME/.poshthemes/night-owl.omp.json | source
 # night-owl
 # 1_shell
-# 
-# 
-# 
-# 
-# 
-# 
-# 
 
 # 🚀 Zoxide Setup for Fast Directory Navigation
+# --------------------------------------------------------
 zoxide init fish | source
 
 # 🔧 Cargo Environment
+# --------------------------------------------------------
 source $HOME/.cargo/env
 
 # 🌟 Greeting Message
-# ---------------------
+# --------------------------------------------------------
 function fish_greeting
     typewrite " 🌞 Hello, " (whoami) "!"
     typewrite " Welcome back! Today is " (date '+%A, %B %d, %Y') "."
@@ -42,7 +41,8 @@ function fish_greeting
 end
 
 # ⌨️ Helper Functions
-# ---------------------
+# --------------------------------------------------------
+
 # Sudo override to use micro instead of nano
 function sudo
     if test $argv[1] = 'nano'
@@ -83,7 +83,7 @@ end
 bind \cf 'fzf_files'  # Bind Ctrl+F to trigger fzf_files
 
 # 🛠️ Aliases
-# ---------------------
+# --------------------------------------------------------
 alias weather='curl wttr.in'
 alias dotgit="git --git-dir=$HOME/.dotfiles_repo/ --work-tree=$HOME"
 alias in="sudo dnf install"
@@ -101,7 +101,7 @@ alias pipes="pipes.sh -t 3"
 alias grub_edit="sudo nano /etc/default/grub"
 
 # 🖥️ Interactive Session
-# ---------------------
+# --------------------------------------------------------
 if status is-interactive
     # Commands for interactive sessions go here
 end
