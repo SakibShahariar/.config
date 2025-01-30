@@ -100,6 +100,7 @@ alias re='sudo dnf remove'
 alias pipes="pipes.sh -t 3"
 alias grub_edit="sudo nano /etc/default/grub"
 
+
 # 🖥️ Interactive Session
 # --------------------------------------------------------
 if status is-interactive
