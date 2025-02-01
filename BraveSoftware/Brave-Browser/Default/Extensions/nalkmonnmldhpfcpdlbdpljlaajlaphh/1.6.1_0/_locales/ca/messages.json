@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Mira vídeos en una finestra flotant Imatge en Imatge (PIP) fora de la finestra del navegador o sobre qualsevol altra aplicació."
+   },
+   "name": {
+      "message": "pip (imatge en imatge)"
+   },
+   "title": {
+      "message": "Reproductor Flotant - Imatge-en-Imatge"
+   }
+}

@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Watch videos in a floating window Picture in Picture (PIP) outside the browser window or on top of any other application."
+   },
+   "name": {
+      "message": "PiP (Picture in picture)"
+   },
+   "title": {
+      "message": "Floating Player - Picture-in-Picture"
+   }
+}

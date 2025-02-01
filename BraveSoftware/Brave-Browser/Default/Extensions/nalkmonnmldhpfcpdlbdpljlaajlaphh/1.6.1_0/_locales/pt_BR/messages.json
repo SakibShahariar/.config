@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Assista vídeos em uma janela flutuante Imagem em Imagem (PIP) fora da janela do navegador ou em cima de qualquer outra aplicação."
+   },
+   "name": {
+      "message": "pip (imagem em imagem)"
+   },
+   "title": {
+      "message": "Player Flutuante - Imagem-em-Imagem"
+   }
+}

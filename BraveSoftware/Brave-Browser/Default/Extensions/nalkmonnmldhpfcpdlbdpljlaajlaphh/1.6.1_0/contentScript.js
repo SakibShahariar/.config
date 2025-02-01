@@ -1,0 +1,1 @@
+!function(){"use strict";const o=o=>chrome.runtime.sendMessage(o);var n,e=((n=e||{}).ChangePopupIcon="ChangePopupIcon",n);const a=new URL(window.location.href).searchParams.get("isdowloadquery");window.self===window.top&&!a&&(window.onload=()=>{setInterval((()=>{o({action:e.ChangePopupIcon})}),1e3)})}();

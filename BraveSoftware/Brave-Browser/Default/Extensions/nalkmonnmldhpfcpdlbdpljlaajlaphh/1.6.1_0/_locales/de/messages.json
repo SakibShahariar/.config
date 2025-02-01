@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Sehen Sie Videos in einem schwebenden Fenster Bild im Bild (PIP) außerhalb des Browserfensters oder über jeder anderen Anwendung."
+   },
+   "name": {
+      "message": "pip (Bild im Bild)"
+   },
+   "title": {
+      "message": "Schwebender Player - Bild-im-Bild"
+   }
+}

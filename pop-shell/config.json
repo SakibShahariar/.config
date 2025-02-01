@@ -1,0 +1,21 @@
+{
+  "float": [
+    {
+      "class": "pop-shell-example",
+      "title": "pop-shell-example"
+    },
+    {
+      "class": "firefox",
+      "title": "^(?!.*Mozilla Firefox).*$",
+      "disabled": true
+    },
+    {
+      "class": "zenity"
+    },
+    {
+      "class": "yad"
+    }
+  ],
+  "skiptaskbarhidden": [],
+  "log_on_focus": false
+}

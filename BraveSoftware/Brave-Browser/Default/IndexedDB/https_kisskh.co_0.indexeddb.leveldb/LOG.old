@@ -1,0 +1,17 @@
+2025/01/31-22:55:10.442 6c5e0 Reusing MANIFEST /home/sakib/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_kisskh.co_0.indexeddb.leveldb/MANIFEST-000001
+2025/01/31-22:55:10.460 6c5e0 Recovering log #38
+2025/01/31-22:55:10.461 6c5e0 Reusing old log /home/sakib/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_kisskh.co_0.indexeddb.leveldb/000038.log 
+2025/01/31-22:55:10.481 6c5e0 Level-0 table #44: started
+2025/01/31-22:55:10.484 6c5e0 Level-0 table #44: 621 bytes OK
+2025/01/31-22:55:10.488 6c5e0 Delete type=0 #38
+2025/01/31-22:55:10.488 6c5e0 Manual compaction at level-0 from '\x00\x10\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/01/31-22:55:11.145 6c5e1 Level-0 table #46: started
+2025/01/31-22:55:11.146 6c5e1 Level-0 table #46: 923 bytes OK
+2025/01/31-22:55:11.149 6c5e1 Delete type=0 #43
+2025/01/31-22:55:11.149 6c5e1 Manual compaction at level-0 from '\x00\x11\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x12\x00\x00\x00' @ 0 : 0; will stop at '\x00\x11\x00\x00\x05' @ 1665 : 1
+2025/01/31-22:55:11.150 6c5e1 Compacting 1@0 + 1@1 files
+2025/01/31-22:55:11.152 6c5e1 Generated table #47@0: 18 keys, 575 bytes
+2025/01/31-22:55:11.152 6c5e1 Compacted 1@0 + 1@1 files => 575 bytes
+2025/01/31-22:55:11.156 6c5e1 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/01/31-22:55:11.157 6c5e1 Delete type=2 #46
+2025/01/31-22:55:11.157 6c5e1 Manual compaction at level-0 from '\x00\x11\x00\x00\x05' @ 1665 : 1 .. '\x00\x12\x00\x00\x00' @ 0 : 0; will stop at (end)
