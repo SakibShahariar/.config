@@ -1,4 +1,5 @@
 {
-  "exts": ["conf"],
-  "syntax": "conf"
+  "/home/sakib/.config/mpv/mpv.conf": {
+    "filetype": "ini"
+  }
 }
