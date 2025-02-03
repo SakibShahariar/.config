@@ -17,5 +17,8 @@
 !/vlc/
 !/yazi/
 
-!/.gitignore
+# Ignore specific subdirectories within micro/
+micro/backups/
+micro/buffers/
 
+!/.gitignore
