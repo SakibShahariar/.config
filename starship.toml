@@ -61,7 +61,7 @@ yellow = '#E5C07B'
 status = "#e23140"
 
 [os]
-format = '(fg:current_line)[](fg:red)[](fg:primary bg:red)[](fg:red)'
+format = '(fg:current_line)[](fg:red)[](fg:primary bg:red)[](fg:red)'  # Fedora logo
 disabled = false
 
 [status]
@@ -139,17 +139,17 @@ symbol = '─'
 style = 'fg:current_line'
 
 [cmd_duration]
-min_time = 500
+min_time = 100
 format = '[─](fg:current_line)[](fg:orange)[](fg:primary bg:orange)[](fg:orange bg:box)[ $duration](fg:foreground bg:box)[](fg:box)'
 
 [time]
 format = '[─](fg:current_line)[](fg:purple)[󰦖](fg:primary bg:purple)[](fg:purple bg:box)[ $time](fg:foreground bg:box)[](fg:box)'
 time_format = '%H:%M'
-disabled = false
+disabled = true
 
 [username]
 format = '[─](fg:current_line)[](fg:yellow)[](fg:primary bg:yellow)[](fg:yellow bg:box)[ $user](fg:foreground bg:box)[](fg:box) '
-show_always = true
+show_always = false
 
 [character]
 format = """
