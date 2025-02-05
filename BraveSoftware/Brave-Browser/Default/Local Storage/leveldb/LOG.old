@@ -1,3 +1,6 @@
-2025/01/31-22:32:16.527 4 Reusing MANIFEST /home/sakib/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2025/01/31-22:32:16.535 4 Recovering log #4
-2025/01/31-22:32:16.536 4 Reusing old log /home/sakib/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000004.log 
+2025/02/04-19:43:43.707 4 Reusing MANIFEST /home/sakib/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2025/02/04-19:43:43.724 4 Recovering log #7
+2025/02/04-19:43:43.730 4 Reusing old log /home/sakib/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000007.log 
+2025/02/04-19:58:26.919 6 Level-0 table #11: started
+2025/02/04-19:58:26.930 6 Level-0 table #11: 13941 bytes OK
+2025/02/04-19:58:26.943 6 Delete type=0 #7

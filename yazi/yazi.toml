@@ -1,7 +1,7 @@
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [manager]
-ratio          = [ 2, 3, 3 ]
+ratio          = [ 2, 4, 4 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
 sort_reverse   = false
@@ -49,8 +49,8 @@ extract = [
 	{ run = 'ya pub extract --list %*',   desc = "Extract here", for = "windows" },
 ]
 play = [
-    { run = 'vlc --play-and-exit "$@"', orphan = true, for = "unix" },
-    { run = 'vlc %*', orphan = true, for = "windows" },
+    { run = 'clapper "$@"', orphan = true, for = "unix" },
+    { run = 'clapper %*', orphan = true, for = "windows" },
     { run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
 
@@ -220,3 +220,13 @@ sort_translit  = false
 
 [editor]
 editor = "micro"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
