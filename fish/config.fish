@@ -14,10 +14,6 @@ set -e PATH
 set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin ~/sbin
 set -Ux PATH /sbin /usr/sbin $PATH
 
-set -Ux LIBVA_DRIVER_NAME iHD
-set -Ux GST_VAAPI_ALL_DRIVERS 1
-
-
 # Starship Initialization (Prompt)
 starship init fish | source
 
