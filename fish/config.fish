@@ -12,7 +12,10 @@ set -e PATH
 
 # Set the correct PATH including ~/Scripts first, followed by system directories
 set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin ~/sbin
+set -Ux QT_QPA_PLATFORMTHEME "qt6ct:gtk2"
 set -Ux PATH /sbin /usr/sbin $PATH
+set -Ux QT_STYLE_OVERRIDE Kvantum
+
 
 # Starship Initialization (Prompt)
 starship init fish | source
