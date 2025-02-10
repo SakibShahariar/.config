@@ -25,9 +25,26 @@ $line_break\
 $character\
 """
 
-palette = 'catppuccin_mocha'
+# palette = 'catppuccin_mocha'
 # palette = 'tokyo_night'
+palette = 'gruvbox'
 add_newline = true
+
+[palettes.gruvbox]
+foreground = '#EBDBB2'
+background = '#1D2021'
+current_line = '#3C3836'
+primary = '#504945'
+box = '#3C3836'
+blue = '#83A598'
+cyan = '#8EC07C'
+green = '#B8BB26'
+orange = '#FE8019'
+pink = '#D3869B'
+purple = '#B16286'
+red = '#FB4934'
+yellow = '#FABD2F'
+status = '#D3869B'
 
 [palettes.catppuccin_mocha]
 foreground = '#D9E0EE'
