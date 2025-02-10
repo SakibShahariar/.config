@@ -1,0 +1,10 @@
+filetype: ini
+patterns:
+  - name: key-value
+    pattern: '^[a-zA-Z0-9._-]+[ \t]*=[ \t]*.*'
+    styles:
+      - foreground: "cyan"
+  - name: comment
+    pattern: '^\s*#.*$'
+    styles:
+      - foreground: "gray"

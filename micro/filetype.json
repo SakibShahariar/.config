@@ -1,5 +1,8 @@
 {
-  "/home/sakib/.config/mpv/mpv.conf": {
-    "filetype": "ini"
-  }
+    "filetypes": {
+        "kitty.conf": "ini"
+    },
+    "extensions": {
+        "conf": "ini"
+    }
 }

@@ -2,6 +2,6 @@
     "clipboardcmd": "wl-copy",
     "colorscheme": "gruvbox-my",
     "filetype": {
-        "kitty.conf": "kitty"
+        "kitty.conf": "ini"
     }
 }
