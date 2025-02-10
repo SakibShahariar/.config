@@ -10,6 +10,6 @@
 # : Flavor {{{
 
 [flavor]
-dark  = "catppuccin-macchiato"
+dark  = "gruvbox-dark"
 light = ""
 

@@ -1,6 +1,6 @@
 {
     "clipboardcmd": "wl-copy",
-    "colorscheme": "catppuccin-mocha-transparent",
+    "colorscheme": "gruvbox-my",
     "filetype": {
         "kitty.conf": "kitty"
     }
