@@ -109,6 +109,6 @@ alias yys="sudo yazi"
 # 🖥️ Interactive Session
 # --------------------------------------------------------
 if status is-interactive
-    fastfetch --config ~/.config/fastfetch/13.jsonc
+    fastfetch --config ~/.config/fastfetch/pre.jsonc
     # Commands for interactive sessions go here
 end
