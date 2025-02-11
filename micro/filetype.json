@@ -1,8 +1,0 @@
-{
-    "filetypes": {
-        "kitty.conf": "ini"
-    },
-    "extensions": {
-        "conf": "ini"
-    }
-}

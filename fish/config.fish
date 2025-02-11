@@ -37,10 +37,10 @@ source $HOME/.cargo/env
 # 🌟 Greeting Message
 # --------------------------------------------------------
 function fish_greeting
-    typewrite " 🌞 Hello, " (whoami) "!"
-    typewrite " Welcome back! Today is " (date '+%A, %B %d, %Y') "."
-    typewrite " Remember, every day is a new opportunity to shine! 🚀"
-    typewrite ""
+#   typewrite " 🌞 Hello, " (whoami) "!"
+#   typewrite " Welcome back! Today is " (date '+%A, %B %d, %Y') "."
+#   typewrite " Remember, every day is a new opportunity to shine! 🚀"
+#   typewrite ""
 end
 
 # ⌨️ Helper Functions
@@ -109,5 +109,6 @@ alias yys="sudo yazi"
 # 🖥️ Interactive Session
 # --------------------------------------------------------
 if status is-interactive
+    fastfetch --config ~/.config/fastfetch/13.jsonc
     # Commands for interactive sessions go here
 end
