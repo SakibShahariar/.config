@@ -36,18 +36,15 @@
         },
         {
             "key": "│ {#33}󰍛 cpu     {#keys}│",
-            "type": "cpu",
-            "showPeCoreCount": true
+            "type": "cpu"
         },
         {
             "key": "│ {#34}󰍛 gpu     {#keys}│",
-            "type": "custom",
-            "format": "Intel HD Graphics 620 @ 1.15 GHz [Integrated]"
+            "type": "gpu"
         },
         {
             "key": "│ {#35}󰍹 display {#keys}│",
-            "type": "custom",
-            "format": "2560x1440 @ 60 Hz (as 2048x1152) in 14\" [Built-in]"
+            "type": "display"
         },
         {
             "key": "│ {#36}󰉉 disk    {#keys}│",
@@ -56,8 +53,7 @@
         },
         {
             "key": "│ {#37}󰌢 model   {#keys}│",
-            "type": "custom",
-            "format": "Latitude 7480"
+            "type": "host"
         },
         {
             "key": "│ {#38}󰅐 uptime  {#keys}│",
