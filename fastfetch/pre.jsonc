@@ -36,11 +36,13 @@
         },
         {
             "key": "│ {#33}󰍛 cpu     {#keys}│",
-            "type": "cpu"
+            "type": "cpu",
+            "icon": ""
         },
         {
             "key": "│ {#34}󰍛 gpu     {#keys}│",
-            "type": "gpu"
+            "type": "gpu",
+            "icon": ""
         },
         {
             "key": "│ {#35}󰍹 display {#keys}│",
