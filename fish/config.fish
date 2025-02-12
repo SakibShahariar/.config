@@ -104,7 +104,7 @@ alias pipes="pipes.sh -t 3"
 alias grub_edit="sudo nano /etc/default/grub"
 alias yy="yazi"
 alias yys="sudo yazi"
-
+alias ls='lsd $argv'
 
 # 🖥️ Interactive Session
 # --------------------------------------------------------
