@@ -8,7 +8,7 @@ configuration {
     display-window:              "";
     drun-display-format:         "{name}";
     window-format:               "{w}{t}";
-    font:                        "JetBrainsMono Nerd Font 19";
+    font:                        "JetBrainsMono Nerd Font 23";
     icon-theme:                  "Tela-circle-dracula";
 }
 
@@ -17,8 +17,8 @@ configuration {
 
 // Main //
 window {
-    height:                      600px;
-    width:                       900px;
+    height:                      900px;
+    width:                       1400px;
     transparency:                "real";
     fullscreen:                  false;
     enabled:                     true;

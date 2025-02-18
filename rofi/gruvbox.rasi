@@ -1,4 +1,4 @@
-// Config //
+// Gruvbox Dark (Green & Blue Highlights)
 configuration {
     modi:                        "drun,filebrowser,window,run";
     show-icons:                  false;
@@ -6,7 +6,7 @@ configuration {
     display-run:                 "";
     display-filebrowser:         "";
     display-window:              "";
-    drun-display-format:         "{name}";
+    drun-display-format:         "{icon}   {name}";
     window-format:               "{w}{t}";
     font:                        "JetBrainsMono Nerd Font 23";
     icon-theme:                  "Tela-circle-dracula";
@@ -27,10 +27,8 @@ window {
     padding:                     0px;
     border:                      2px;
     border-radius:               40px;
-    
-    //color del borde de la ventana
-    border-color:                #B493FE; //#ffffff; //#ff0000;
-    background-color:            transparent;
+    border-color:                #83a598;  // Soft Green Border
+    background-color:            #282828;  // Dark Background
 }
 mainbox {
     enabled:                     true;
@@ -38,25 +36,24 @@ mainbox {
     orientation:                 horizontal;
     children:                    [  "inputbar" , "listbox" ];
     background-color:            transparent;
-    background-image:            url("/home/sakib/.config/rofi/img/hacker.jpg", height);
+    background-image:            url("/home/sakib/.config/rofi/img/finalizer.jpg", height);
 }
 
 
-// Inputs // aca cambias fondo
+// Inputs //
 inputbar {
     enabled:                     true;
     width:                       580px;
     children:                    [ "mode-switcher" , "entry" ];
     background-color:            transparent;
-    background-image:            url("/home/epharedam/.config/rofi/img/hacker.png", height);
+    background-image:            url("/home/sakib/.config/rofi/img/finalizer.jpg", height);
 }
 entry {
     enabled:                     false;
 }
 
-
 // Modes //
-mode-switcher{
+mode-switcher {
     orientation:                 vertical;
     enabled:                     true;
     spacing:                     0px;
@@ -64,26 +61,25 @@ mode-switcher{
     padding:                     160px 10px 160px 10px;
     spacing:                     25px;
     background-color:            transparent;
-   background-image:            url("/home/epharedam/.config/rofi/img/hacker.png", height);
+    background-image:            url("/home/sakib/.config/rofi/img/finalizer.jpg", height);
 }
 button {
     cursor:                      pointer;
     border-radius:               50px;
-    background-color:            #4144D7; //#ff0000;
-    text-color:                  #000000;
+    background-color:            #83a598;  // Green Accent
+    text-color:                  #282828;  // Dark Text
 }
 button selected {
-    background-color:            #4144D7; //#ff0000;
-    text-color:                  @main-bg;
+    background-color:            #83a598;  // Green Accent
+    text-color:                  #282828;  // Dark Text
 }
-
 
 // Lists //
 listbox {
     spacing:                     10px;
     padding:                     30px;
     children:                    [ "listview" ];
-    background-color:            #000000;
+    background-color:            #000000;  // Black Background
 }
 listview {
     enabled:                     true;
@@ -97,19 +93,18 @@ listview {
     fixed-columns:               true;
     cursor:                      "default";
     background-color:            transparent;
-    text-color:                  #ffffff;
+    text-color:                  #ffffff;  // White Text
 }
-
 
 // Elements //
 element {
     enabled:                     true;
-    spacing:                     30px;
-    padding:                     8px;
-    border-radius:               20px;
+    spacing:                     10px;
+    padding:                     5px;
+    border-radius:               10px;
     cursor:                      pointer;
     background-color:            transparent;
-    text-color:                  @main-fg;
+    text-color:                  #a89984;  // Light Brown
 }
 @media(max-aspect-ratio: 1.8) {
     element {
@@ -117,13 +112,13 @@ element {
     }
 }
 
-//menu colores
+// Menu Colors //
 element selected.normal {
-    background-color:            #4144D7; //#ff0000;
-    text-color:                  @select-fg;
+    background-color:            #458588;  // Blue Accent
+    text-color:                  #ebdbb2;  // Light Beige Text
 }
 element-icon {
-    size:                        48px;
+    size:                        32px;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
@@ -135,4 +130,3 @@ element-text {
     background-color:            transparent;
     text-color:                  inherit;
 }
-
