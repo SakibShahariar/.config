@@ -1547,7 +1547,7 @@
 [skins2] # Skinnable Interface
 
 # Skin to use (string)
-skins2-last=/usr/share/vlc/skins2/default.vlt
+#skins2-last=
 
 # Config of last used skin (string)
 #skins2-config=
@@ -1567,7 +1567,7 @@ skins2-last=/usr/share/vlc/skins2/default.vlt
 #qt-minimal-view=0
 
 # Systray icon (boolean)
-qt-system-tray=0
+#qt-system-tray=1
 
 # Show notification popup on track change (integer)
 #qt-notification=1
@@ -1585,7 +1585,7 @@ qt-system-tray=0
 #qt-fs-opacity=0.800000
 
 # Resize interface to the native video size (boolean)
-qt-video-autoresize=0
+#qt-video-autoresize=1
 
 # Show playing item name in window title (boolean)
 #qt-name-in-title=1
@@ -1600,10 +1600,10 @@ qt-video-autoresize=0
 #qt-recentplay-filter=
 
 # Continue playback? (integer)
-qt-continue=2
+#qt-continue=1
 
 # Embed the file browser in open dialog (boolean)
-qt-embedded-open=1
+#qt-embedded-open=0
 
 # Show advanced preferences over simple ones (boolean)
 #qt-advanced-pref=0
@@ -3995,7 +3995,7 @@ qt-privacy-ask=0
 #packetizer=
 
 # VoD server module (string)
-vod-server=any
+#vod-server=
 
 # Use a plugins cache (boolean)
 #plugins-cache=1
@@ -4040,7 +4040,7 @@ vod-server=any
 #playlist-cork=1
 
 # Allow only one running instance (boolean)
-one-instance=1
+#one-instance=0
 
 # Use only one instance when started from file manager (boolean)
 #one-instance-when-started-from-file=1
@@ -4100,7 +4100,7 @@ metadata-network-access=1
 #intf=
 
 # Extra interface modules (string)
-extraintf=qt
+#extraintf=
 
 # Control interfaces (string)
 #control=
