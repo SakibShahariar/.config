@@ -1,0 +1,132 @@
+// Gruvbox Dark (Green & Blue Highlights)
+configuration {
+    modi:                        "drun,filebrowser,window,run";
+    show-icons:                  false;
+    display-drun:                "";
+    display-run:                 "";
+    display-filebrowser:         "";
+    display-window:              "";
+    drun-display-format:         "{icon}   {name}";
+    window-format:               "{w}{t}";
+    font:                        "JetBrainsMono Nerd Font 23";
+    icon-theme:                  "Tela-circle-dracula";
+}
+
+@theme "~/.config/rofi/themes/theme.rasi"
+
+
+// Main //
+window {
+    height:                      800px;
+    width:                       1200px;
+    transparency:                "real";
+    fullscreen:                  false;
+    enabled:                     true;
+    cursor:                      "default";
+    spacing:                     0px;
+    padding:                     0px;
+    border:                      2px;
+    border-radius:               40px;
+    border-color:                #83a598;  // Soft Green Border
+    background-color:            #282828;  // Dark Background
+}
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    orientation:                 horizontal;
+    children:                    [  "inputbar" , "listbox" ];
+    background-color:            transparent;
+    background-image:            url("/home/sakib/.config/rofi/img/finalizer.jpg", height);
+}
+
+
+// Inputs //
+inputbar {
+    enabled:                     true;
+    width:                       580px;
+    children:                    [ "mode-switcher" , "entry" ];
+    background-color:            transparent;
+    background-image:            url("/home/sakib/.config/rofi/img/finalizer.jpg", height);
+}
+entry {
+    enabled:                     false;
+}
+
+// Modes //
+mode-switcher {
+    orientation:                 vertical;
+    enabled:                     true;
+    spacing:                     0px;
+    width:                       78px;
+    padding:                     160px 10px 160px 10px;
+    spacing:                     25px;
+    background-color:            transparent;
+    background-image:            url("/home/sakib/.config/rofi/img/finalizer.jpg", height);
+}
+button {
+    cursor:                      pointer;
+    border-radius:               50px;
+    background-color:            #83a598;  // Green Accent
+    text-color:                  #282828;  // Dark Text
+}
+button selected {
+    background-color:            #83a598;  // Green Accent
+    text-color:                  #282828;  // Dark Text
+}
+
+// Lists //
+listbox {
+    spacing:                     10px;
+    padding:                     30px;
+    children:                    [ "listview" ];
+    background-color:            #000000;  // Black Background
+}
+listview {
+    enabled:                     true;
+    columns:                     1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  #ffffff;  // White Text
+}
+
+// Elements //
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     5px;
+    border-radius:               10px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  #a89984;  // Light Brown
+}
+@media(max-aspect-ratio: 1.8) {
+    element {
+        orientation:             vertical;
+    }
+}
+
+// Menu Colors //
+element selected.normal {
+    background-color:            #458588;  // Blue Accent
+    text-color:                  #ebdbb2;  // Light Beige Text
+}
+element-icon {
+    size:                        32px;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
