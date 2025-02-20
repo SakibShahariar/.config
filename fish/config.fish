@@ -32,7 +32,7 @@ zoxide init fish | source
 
 # 🔧 Cargo Environment
 # --------------------------------------------------------
-source $HOME/.cargo/env
+# source $HOME/.cargo/env
 
 # 🌟 Greeting Message
 # --------------------------------------------------------

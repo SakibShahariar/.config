@@ -84,7 +84,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "13 Feb 2025 15:47:45 +0000",
+        "lastMatch": "20 Feb 2025 15:46:01 +0000",
         "mustContain": "Dr. Stone S4",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -198,9 +198,9 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "15 Feb 2025 18:36:51 +0000",
+        "lastMatch": "19 Feb 2025 23:49:49 +0000",
         "mustContain": "Medalist",
-        "mustNotContain": "",
+        "mustNotContain": "DSNP",
         "previouslyMatchedEpisodes": [
         ],
         "priority": 0,

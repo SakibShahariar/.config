@@ -11,7 +11,9 @@
 ## style-6     style-7     style-8     style-9     style-10
 
 dir="$HOME/.config/rofi/launchers/type-6"
-theme='style-9'
+theme='style-5'
 
 ## Run
-rofi -show drun -normal-window -theme ${dir}/${theme}.rasi
+rofi -show drun \
+	-theme ${dir}/${theme}.rasi \
+	-normal-window              # Open in a normal window, not full-screen

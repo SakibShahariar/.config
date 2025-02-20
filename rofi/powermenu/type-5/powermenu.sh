@@ -11,7 +11,7 @@
 
 # Current Theme
 dir="$HOME/.config/rofi/powermenu/type-5"
-theme='style-1'
+theme='style-3'
 
 # CMDs
 lastlogin="`last $USER | head -n1 | tr -s ' ' | cut -d' ' -f5,6,7`"
@@ -28,12 +28,12 @@ logout=''
 yes=''
 no=''
 
-# Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
 		-p " $USER@$host" \
 		-mesg " Last Login: $lastlogin |  Uptime: $uptime" \
-		-theme ${dir}/${theme}.rasi
+		-theme ${dir}/${theme}.rasi \
+		-normal-window
 }
 
 # Confirmation CMD
@@ -102,10 +102,14 @@ case ${chosen} in
 		run_cmd --hibernate
         ;;
     $lock)
-		if [[ -x '/usr/bin/betterlockscreen' ]]; then
-			betterlockscreen -l
-		elif [[ -x '/usr/bin/i3lock' ]]; then
-			i3lock
+		echo "Locking the screen..."  # Debug message
+		# Locking for GNOME
+		if command -v gnome-screensaver-command &> /dev/null; then
+			gnome-screensaver-command -l
+		elif command -v loginctl &> /dev/null; then
+			loginctl lock-session
+		else
+			echo "No lock tool found for GNOME!"
 		fi
         ;;
     $suspend)
