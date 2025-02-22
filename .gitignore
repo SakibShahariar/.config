@@ -20,6 +20,7 @@
 !/superfile/
 !/vlc/
 !/yazi/
+!/yt-x/
 
 # Ignore specific subdirectories within micro/
 micro/backups/
