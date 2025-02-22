@@ -28,3 +28,6 @@ micro/buffers/
 
 !/.gitignore
 !/starship.toml
+!/openbar
+
+
