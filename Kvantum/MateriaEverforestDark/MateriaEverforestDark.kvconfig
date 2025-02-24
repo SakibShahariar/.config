@@ -73,11 +73,11 @@ saturation=1.00
 shadowless_popup=false
 
 [GeneralColors]
-alt.base.color=#333c43
-base.color=#333c43
+alt.base.color=#272e33
+base.color=#272e33
 button.color=#3B4252
 button.text.color=#d3c6aa
-dark.color=#333c43
+dark.color=#272e33
 disabled.text.color=#5d6b66
 highlight.color=#7fbbb33c
 highlight.text.color=#d3c6aa
@@ -85,12 +85,12 @@ inactive.highlight.color=#7fbbb33c
 light.color=#48584e
 link.color=#7fbbb3
 link.visited.color=#d699b6
-mid.color=#333c43
+mid.color=#272e33
 mid.light.color=#d3c6aa1e
 progress.indicator.text.color=#d3c6aa
 text.color=#d3c6aa
 tooltip.text.color=#d3c6aa
-window.color=#333c43
+window.color=#272e33
 window.text.color=#d3c6aa
 
 [Hacks]

@@ -711,6 +711,11 @@
 # Text direction (integer)
 #freetype-text-direction=0
 
+[stream_out_chromaprint] # Chromaprint stream output
+
+# Duration of the fingerprinting (integer)
+#duration=90
+
 [stream_out_chromecast] # Chromecast stream output
 
 # ? (string)
@@ -733,11 +738,6 @@
 
 # Conversion quality (integer)
 #sout-chromecast-conversion-quality=1
-
-[stream_out_chromaprint] # Chromaprint stream output
-
-# Duration of the fingerprinting (integer)
-#duration=90
 
 [stream_out_transcode] # Transcode stream output
 
@@ -1585,7 +1585,7 @@
 #qt-fs-opacity=0.800000
 
 # Resize interface to the native video size (boolean)
-#qt-video-autoresize=1
+qt-video-autoresize=0
 
 # Show playing item name in window title (boolean)
 #qt-name-in-title=1
@@ -1600,7 +1600,7 @@
 #qt-recentplay-filter=
 
 # Continue playback? (integer)
-#qt-continue=1
+qt-continue=2
 
 # Embed the file browser in open dialog (boolean)
 #qt-embedded-open=0
@@ -1640,6 +1640,23 @@ qt-privacy-ask=0
 
 # When to raise the interface (integer)
 #qt-auto-raise=1
+
+[avformat] # Avformat demuxer
+
+# Format name (string)
+#avformat-format=
+
+# Advanced options (string)
+#avformat-options=
+
+# Avformat mux (string)
+#sout-avformat-mux=
+
+# Advanced options (string)
+#sout-avformat-options=
+
+# Reset timestamps (boolean)
+#sout-avformat-reset-ts=1
 
 [ts] # MPEG Transport Stream demuxer
 
@@ -1733,23 +1750,6 @@ qt-privacy-ask=0
 
 # Preload clusters (boolean)
 #mkv-preload-clusters=0
-
-[avformat] # Avformat demuxer
-
-# Format name (string)
-#avformat-format=
-
-# Advanced options (string)
-#avformat-options=
-
-# Avformat mux (string)
-#sout-avformat-mux=
-
-# Advanced options (string)
-#sout-avformat-options=
-
-# Reset timestamps (boolean)
-#sout-avformat-reset-ts=1
 
 [vc1] # VC1 video demuxer
 
@@ -1954,6 +1954,131 @@ qt-privacy-ask=0
 
 # Trigger button (string)
 #gestures-button=left
+
+[avcodec] # FFmpeg audio/video decoder
+
+# Direct rendering (boolean)
+#avcodec-dr=1
+
+# Show corrupted frames (boolean)
+#avcodec-corrupted=1
+
+# Error resilience (integer)
+#avcodec-error-resilience=1
+
+# Workaround bugs (integer)
+#avcodec-workaround-bugs=1
+
+# Hurry up (boolean)
+#avcodec-hurry-up=1
+
+# Skip frame (default=0) (integer)
+#avcodec-skip-frame=0
+
+# Skip idct (default=0) (integer)
+#avcodec-skip-idct=0
+
+# Allow speed tricks (boolean)
+#avcodec-fast=0
+
+# Skip the loop filter for H.264 decoding (integer)
+#avcodec-skiploopfilter=0
+
+# Debug mask (integer)
+#avcodec-debug=0
+
+# Codec name (string)
+#avcodec-codec=
+
+# Hardware decoding (string)
+#avcodec-hw=any
+
+# Threads (integer)
+#avcodec-threads=0
+
+# Advanced options (string)
+#avcodec-options=
+
+# Codec name (string)
+#sout-avcodec-codec=
+
+# Quality level (string)
+#sout-avcodec-hq=rd
+
+# Ratio of key frames (integer)
+#sout-avcodec-keyint=0
+
+# Ratio of B frames (integer)
+#sout-avcodec-bframes=0
+
+# Hurry up (boolean)
+#sout-avcodec-hurry-up=0
+
+# Interlaced encoding (boolean)
+#sout-avcodec-interlace=0
+
+# Interlaced motion estimation (boolean)
+#sout-avcodec-interlace-me=1
+
+# Video bitrate tolerance (integer)
+#sout-avcodec-vt=0
+
+# Pre-motion estimation (boolean)
+#sout-avcodec-pre-me=0
+
+# Rate control buffer size (integer)
+#sout-avcodec-rc-buffer-size=0
+
+# Rate control buffer aggressiveness (float)
+#sout-avcodec-rc-buffer-aggressivity=1.000000
+
+# I quantization factor (float)
+#sout-avcodec-i-quant-factor=0.000000
+
+# Noise reduction (integer)
+#sout-avcodec-noise-reduction=0
+
+# MPEG4 quantization matrix (boolean)
+#sout-avcodec-mpeg4-matrix=0
+
+# Minimum video quantizer scale (integer)
+#sout-avcodec-qmin=0
+
+# Maximum video quantizer scale (integer)
+#sout-avcodec-qmax=0
+
+# Trellis quantization (boolean)
+#sout-avcodec-trellis=0
+
+# Fixed quantizer scale (float)
+#sout-avcodec-qscale=3.000000
+
+# Strict standard compliance (integer)
+#sout-avcodec-strict=0
+
+# Luminance masking (float)
+#sout-avcodec-lumi-masking=0.000000
+
+# Darkness masking (float)
+#sout-avcodec-dark-masking=0.000000
+
+# Motion masking (float)
+#sout-avcodec-p-masking=0.000000
+
+# Border masking (float)
+#sout-avcodec-border-masking=0.000000
+
+# Luminance elimination (integer)
+#sout-avcodec-luma-elim-threshold=0
+
+# Chrominance elimination (integer)
+#sout-avcodec-chroma-elim-threshold=0
+
+# Specify AAC audio profile to use (string)
+#sout-avcodec-aac-profile=low
+
+# Advanced options (string)
+#sout-avcodec-options=
 
 [zvbi] # VBI and Teletext decoder
 
@@ -2193,131 +2318,6 @@ qt-privacy-ask=0
 # Use Core Text renderer (boolean)
 #aribsub-use-coretext=0
 
-[avcodec] # FFmpeg audio/video decoder
-
-# Direct rendering (boolean)
-#avcodec-dr=1
-
-# Show corrupted frames (boolean)
-#avcodec-corrupted=1
-
-# Error resilience (integer)
-#avcodec-error-resilience=1
-
-# Workaround bugs (integer)
-#avcodec-workaround-bugs=1
-
-# Hurry up (boolean)
-#avcodec-hurry-up=1
-
-# Skip frame (default=0) (integer)
-#avcodec-skip-frame=0
-
-# Skip idct (default=0) (integer)
-#avcodec-skip-idct=0
-
-# Allow speed tricks (boolean)
-#avcodec-fast=0
-
-# Skip the loop filter for H.264 decoding (integer)
-#avcodec-skiploopfilter=0
-
-# Debug mask (integer)
-#avcodec-debug=0
-
-# Codec name (string)
-#avcodec-codec=
-
-# Hardware decoding (string)
-#avcodec-hw=any
-
-# Threads (integer)
-#avcodec-threads=0
-
-# Advanced options (string)
-#avcodec-options=
-
-# Codec name (string)
-#sout-avcodec-codec=
-
-# Quality level (string)
-#sout-avcodec-hq=rd
-
-# Ratio of key frames (integer)
-#sout-avcodec-keyint=0
-
-# Ratio of B frames (integer)
-#sout-avcodec-bframes=0
-
-# Hurry up (boolean)
-#sout-avcodec-hurry-up=0
-
-# Interlaced encoding (boolean)
-#sout-avcodec-interlace=0
-
-# Interlaced motion estimation (boolean)
-#sout-avcodec-interlace-me=1
-
-# Video bitrate tolerance (integer)
-#sout-avcodec-vt=0
-
-# Pre-motion estimation (boolean)
-#sout-avcodec-pre-me=0
-
-# Rate control buffer size (integer)
-#sout-avcodec-rc-buffer-size=0
-
-# Rate control buffer aggressiveness (float)
-#sout-avcodec-rc-buffer-aggressivity=1.000000
-
-# I quantization factor (float)
-#sout-avcodec-i-quant-factor=0.000000
-
-# Noise reduction (integer)
-#sout-avcodec-noise-reduction=0
-
-# MPEG4 quantization matrix (boolean)
-#sout-avcodec-mpeg4-matrix=0
-
-# Minimum video quantizer scale (integer)
-#sout-avcodec-qmin=0
-
-# Maximum video quantizer scale (integer)
-#sout-avcodec-qmax=0
-
-# Trellis quantization (boolean)
-#sout-avcodec-trellis=0
-
-# Fixed quantizer scale (float)
-#sout-avcodec-qscale=3.000000
-
-# Strict standard compliance (integer)
-#sout-avcodec-strict=0
-
-# Luminance masking (float)
-#sout-avcodec-lumi-masking=0.000000
-
-# Darkness masking (float)
-#sout-avcodec-dark-masking=0.000000
-
-# Motion masking (float)
-#sout-avcodec-p-masking=0.000000
-
-# Border masking (float)
-#sout-avcodec-border-masking=0.000000
-
-# Luminance elimination (integer)
-#sout-avcodec-luma-elim-threshold=0
-
-# Chrominance elimination (integer)
-#sout-avcodec-chroma-elim-threshold=0
-
-# Specify AAC audio profile to use (string)
-#sout-avcodec-aac-profile=low
-
-# Advanced options (string)
-#sout-avcodec-options=
-
 [vpx] # WebM video decoder
 
 # Quality mode (integer)
@@ -2468,6 +2468,466 @@ qt-privacy-ask=0
 
 # A/52 dynamic range compression (boolean)
 #a52-dynrng=1
+
+[x264] # H.264/MPEG-4 Part 10/AVC encoder (x264)
+
+# Maximum GOP size (integer)
+#sout-x264-keyint=250
+
+# Minimum GOP size (integer)
+#sout-x264-min-keyint=25
+
+# Use recovery points to close GOPs (boolean)
+#sout-x264-opengop=0
+
+# Enable compatibility hacks for Blu-ray support (boolean)
+#sout-x264-bluray-compat=0
+
+# Extra I-frames aggressivity (integer)
+#sout-x264-scenecut=40
+
+# B-frames between I and P (integer)
+#sout-x264-bframes=3
+
+# Adaptive B-frame decision (integer)
+#sout-x264-b-adapt=1
+
+# Influence (bias) B-frames usage (integer)
+#sout-x264-b-bias=0
+
+# Keep some B-frames as references (string)
+#sout-x264-bpyramid=normal
+
+# CABAC (boolean)
+#sout-x264-cabac=1
+
+# Use fullrange instead of TV colorrange (boolean)
+#sout-x264-fullrange=0
+
+# Number of reference frames (integer)
+#sout-x264-ref=3
+
+# Skip loop filter (boolean)
+#sout-x264-nf=0
+
+# Loop filter AlphaC0 and Beta parameters alpha:beta (string)
+#sout-x264-deblock=0:0
+
+# Strength of psychovisual optimization, default is "1.0:0.0" (string)
+#sout-x264-psy-rd=1.0:0.0
+
+# Use Psy-optimizations (boolean)
+#sout-x264-psy=1
+
+# H.264 level (string)
+#sout-x264-level=0
+
+# H.264 profile (string)
+#sout-x264-profile=high
+
+# Interlaced mode (boolean)
+#sout-x264-interlaced=0
+
+# Frame packing (integer)
+#sout-x264-frame-packing=-1
+
+# Force number of slices per frame (integer)
+#sout-x264-slices=0
+
+# Limit the size of each slice in bytes (integer)
+#sout-x264-slice-max-size=0
+
+# Limit the size of each slice in macroblocks (integer)
+#sout-x264-slice-max-mbs=0
+
+# HRD-timing information (string)
+#sout-x264-hrd=none
+
+# Set QP (integer)
+#sout-x264-qp=-1
+
+# Quality-based VBR (integer)
+#sout-x264-crf=23
+
+# Min QP (integer)
+#sout-x264-qpmin=10
+
+# Max QP (integer)
+#sout-x264-qpmax=51
+
+# Max QP step (integer)
+#sout-x264-qpstep=4
+
+# Average bitrate tolerance (float)
+#sout-x264-ratetol=1.000000
+
+# Max local bitrate (integer)
+#sout-x264-vbv-maxrate=0
+
+# VBV buffer (integer)
+#sout-x264-vbv-bufsize=0
+
+# Initial VBV buffer occupancy (float)
+#sout-x264-vbv-init=0.900000
+
+# QP factor between I and P (float)
+#sout-x264-ipratio=1.400000
+
+# QP factor between P and B (float)
+#sout-x264-pbratio=1.300000
+
+# QP difference between chroma and luma (integer)
+#sout-x264-chroma-qp-offset=0
+
+# Multipass ratecontrol (integer)
+#sout-x264-pass=0
+
+# QP curve compression (float)
+#sout-x264-qcomp=0.600000
+
+# Reduce fluctuations in QP (float)
+#sout-x264-cplxblur=20.000000
+
+# Reduce fluctuations in QP (float)
+#sout-x264-qblur=0.500000
+
+# How AQ distributes bits (integer)
+#sout-x264-aq-mode=1
+
+# Strength of AQ (float)
+#sout-x264-aq-strength=1.000000
+
+# Partitions to consider (string)
+#sout-x264-partitions=normal
+
+# Direct MV prediction mode (string)
+#sout-x264-direct=spatial
+
+# Direct prediction size (integer)
+#sout-x264-direct-8x8=1
+
+# Weighted prediction for B-frames (boolean)
+#sout-x264-weightb=1
+
+# Weighted prediction for P-frames (integer)
+#sout-x264-weightp=2
+
+# Integer pixel motion estimation method (string)
+#sout-x264-me=hex
+
+# Maximum motion vector search range (integer)
+#sout-x264-merange=16
+
+# Maximum motion vector length (integer)
+#sout-x264-mvrange=-1
+
+# Minimum buffer space between threads (integer)
+#sout-x264-mvrange-thread=-1
+
+# Subpixel motion estimation and partition decision quality (integer)
+#sout-x264-subme=7
+
+# Decide references on a per partition basis (boolean)
+#sout-x264-mixed-refs=1
+
+# Chroma in motion estimation (boolean)
+#sout-x264-chroma-me=1
+
+# Adaptive spatial transform size (boolean)
+#sout-x264-8x8dct=1
+
+# Trellis RD quantization (integer)
+#sout-x264-trellis=1
+
+# Framecount to use on frametype lookahead (integer)
+#sout-x264-lookahead=40
+
+# Use Periodic Intra Refresh (boolean)
+#sout-x264-intra-refresh=0
+
+# Use mb-tree ratecontrol (boolean)
+#sout-x264-mbtree=1
+
+# Early SKIP detection on P-frames (boolean)
+#sout-x264-fast-pskip=1
+
+# Coefficient thresholding on P-frames (boolean)
+#sout-x264-dct-decimate=1
+
+# Noise reduction (integer)
+#sout-x264-nr=0
+
+# Inter luma quantization deadzone (integer)
+#sout-x264-deadzone-inter=21
+
+# Intra luma quantization deadzone (integer)
+#sout-x264-deadzone-intra=11
+
+# Non-deterministic optimizations when threaded (boolean)
+#sout-x264-non-deterministic=0
+
+# CPU optimizations (boolean)
+#sout-x264-asm=1
+
+# PSNR computation (boolean)
+#sout-x264-psnr=0
+
+# SSIM computation (boolean)
+#sout-x264-ssim=0
+
+# Quiet mode (boolean)
+#sout-x264-quiet=0
+
+# SPS and PPS id numbers (integer)
+#sout-x264-sps-id=0
+
+# Access unit delimiters (boolean)
+#sout-x264-aud=0
+
+# Statistics (boolean)
+#sout-x264-verbose=0
+
+# Filename for 2 pass stats file (string)
+#sout-x264-stats=x264_2pass.log
+
+# Default preset setting used (string)
+#sout-x264-preset=
+
+# Default tune setting used (string)
+#sout-x264-tune=
+
+# x264 advanced options (string)
+#sout-x264-options=
+
+[x26410b] # H.264/MPEG-4 Part 10/AVC encoder (x264 10-bit)
+
+# Maximum GOP size (integer)
+#sout-x26410b-keyint=250
+
+# Minimum GOP size (integer)
+#sout-x26410b-min-keyint=25
+
+# Use recovery points to close GOPs (boolean)
+#sout-x26410b-opengop=0
+
+# Enable compatibility hacks for Blu-ray support (boolean)
+#sout-x26410b-bluray-compat=0
+
+# Extra I-frames aggressivity (integer)
+#sout-x26410b-scenecut=40
+
+# B-frames between I and P (integer)
+#sout-x26410b-bframes=3
+
+# Adaptive B-frame decision (integer)
+#sout-x26410b-b-adapt=1
+
+# Influence (bias) B-frames usage (integer)
+#sout-x26410b-b-bias=0
+
+# Keep some B-frames as references (string)
+#sout-x26410b-bpyramid=normal
+
+# CABAC (boolean)
+#sout-x26410b-cabac=1
+
+# Use fullrange instead of TV colorrange (boolean)
+#sout-x26410b-fullrange=0
+
+# Number of reference frames (integer)
+#sout-x26410b-ref=3
+
+# Skip loop filter (boolean)
+#sout-x26410b-nf=0
+
+# Loop filter AlphaC0 and Beta parameters alpha:beta (string)
+#sout-x26410b-deblock=0:0
+
+# Strength of psychovisual optimization, default is "1.0:0.0" (string)
+#sout-x26410b-psy-rd=1.0:0.0
+
+# Use Psy-optimizations (boolean)
+#sout-x26410b-psy=1
+
+# H.264 level (string)
+#sout-x26410b-level=0
+
+# H.264 profile (string)
+#sout-x26410b-profile=high
+
+# Interlaced mode (boolean)
+#sout-x26410b-interlaced=0
+
+# Frame packing (integer)
+#sout-x26410b-frame-packing=-1
+
+# Force number of slices per frame (integer)
+#sout-x26410b-slices=0
+
+# Limit the size of each slice in bytes (integer)
+#sout-x26410b-slice-max-size=0
+
+# Limit the size of each slice in macroblocks (integer)
+#sout-x26410b-slice-max-mbs=0
+
+# HRD-timing information (string)
+#sout-x26410b-hrd=none
+
+# Set QP (integer)
+#sout-x26410b-qp=-1
+
+# Quality-based VBR (integer)
+#sout-x26410b-crf=23
+
+# Min QP (integer)
+#sout-x26410b-qpmin=10
+
+# Max QP (integer)
+#sout-x26410b-qpmax=51
+
+# Max QP step (integer)
+#sout-x26410b-qpstep=4
+
+# Average bitrate tolerance (float)
+#sout-x26410b-ratetol=1.000000
+
+# Max local bitrate (integer)
+#sout-x26410b-vbv-maxrate=0
+
+# VBV buffer (integer)
+#sout-x26410b-vbv-bufsize=0
+
+# Initial VBV buffer occupancy (float)
+#sout-x26410b-vbv-init=0.900000
+
+# QP factor between I and P (float)
+#sout-x26410b-ipratio=1.400000
+
+# QP factor between P and B (float)
+#sout-x26410b-pbratio=1.300000
+
+# QP difference between chroma and luma (integer)
+#sout-x26410b-chroma-qp-offset=0
+
+# Multipass ratecontrol (integer)
+#sout-x26410b-pass=0
+
+# QP curve compression (float)
+#sout-x26410b-qcomp=0.600000
+
+# Reduce fluctuations in QP (float)
+#sout-x26410b-cplxblur=20.000000
+
+# Reduce fluctuations in QP (float)
+#sout-x26410b-qblur=0.500000
+
+# How AQ distributes bits (integer)
+#sout-x26410b-aq-mode=1
+
+# Strength of AQ (float)
+#sout-x26410b-aq-strength=1.000000
+
+# Partitions to consider (string)
+#sout-x26410b-partitions=normal
+
+# Direct MV prediction mode (string)
+#sout-x26410b-direct=spatial
+
+# Direct prediction size (integer)
+#sout-x26410b-direct-8x8=1
+
+# Weighted prediction for B-frames (boolean)
+#sout-x26410b-weightb=1
+
+# Weighted prediction for P-frames (integer)
+#sout-x26410b-weightp=2
+
+# Integer pixel motion estimation method (string)
+#sout-x26410b-me=hex
+
+# Maximum motion vector search range (integer)
+#sout-x26410b-merange=16
+
+# Maximum motion vector length (integer)
+#sout-x26410b-mvrange=-1
+
+# Minimum buffer space between threads (integer)
+#sout-x26410b-mvrange-thread=-1
+
+# Subpixel motion estimation and partition decision quality (integer)
+#sout-x26410b-subme=7
+
+# Decide references on a per partition basis (boolean)
+#sout-x26410b-mixed-refs=1
+
+# Chroma in motion estimation (boolean)
+#sout-x26410b-chroma-me=1
+
+# Adaptive spatial transform size (boolean)
+#sout-x26410b-8x8dct=1
+
+# Trellis RD quantization (integer)
+#sout-x26410b-trellis=1
+
+# Framecount to use on frametype lookahead (integer)
+#sout-x26410b-lookahead=40
+
+# Use Periodic Intra Refresh (boolean)
+#sout-x26410b-intra-refresh=0
+
+# Use mb-tree ratecontrol (boolean)
+#sout-x26410b-mbtree=1
+
+# Early SKIP detection on P-frames (boolean)
+#sout-x26410b-fast-pskip=1
+
+# Coefficient thresholding on P-frames (boolean)
+#sout-x26410b-dct-decimate=1
+
+# Noise reduction (integer)
+#sout-x26410b-nr=0
+
+# Inter luma quantization deadzone (integer)
+#sout-x26410b-deadzone-inter=21
+
+# Intra luma quantization deadzone (integer)
+#sout-x26410b-deadzone-intra=11
+
+# Non-deterministic optimizations when threaded (boolean)
+#sout-x26410b-non-deterministic=0
+
+# CPU optimizations (boolean)
+#sout-x26410b-asm=1
+
+# PSNR computation (boolean)
+#sout-x26410b-psnr=0
+
+# SSIM computation (boolean)
+#sout-x26410b-ssim=0
+
+# Quiet mode (boolean)
+#sout-x26410b-quiet=0
+
+# SPS and PPS id numbers (integer)
+#sout-x26410b-sps-id=0
+
+# Access unit delimiters (boolean)
+#sout-x26410b-aud=0
+
+# Statistics (boolean)
+#sout-x26410b-verbose=0
+
+# Filename for 2 pass stats file (string)
+#sout-x26410b-stats=x264_2pass.log
+
+# Default preset setting used (string)
+#sout-x26410b-preset=
+
+# Default tune setting used (string)
+#sout-x26410b-tune=
+
+# x264 advanced options (string)
+#sout-x26410b-options=
 
 [amem] # Audio memory output
 
@@ -2918,6 +3378,14 @@ qt-privacy-ask=0
 # Synchronous writing (boolean)
 #sout-file-sync=0
 
+[avio] # libavformat AVIO access
+
+# Advanced options (string)
+#avio-options=
+
+# Advanced options (string)
+#sout-avio-options=
+
 [xcb_screen] # Screen capture (with X11/XCB)
 
 # Frame rate (float)
@@ -3222,14 +3690,6 @@ qt-privacy-ask=0
 
 #  SRT Stream ID (string)
 #streamid=
-
-[avio] # libavformat AVIO access
-
-# Advanced options (string)
-#avio-options=
-
-# Advanced options (string)
-#sout-avio-options=
 
 [vdr] # VDR recordings
 
@@ -4040,7 +4500,7 @@ qt-privacy-ask=0
 #playlist-cork=1
 
 # Allow only one running instance (boolean)
-#one-instance=0
+one-instance=1
 
 # Use only one instance when started from file manager (boolean)
 #one-instance-when-started-from-file=1
