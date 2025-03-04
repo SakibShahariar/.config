@@ -1,0 +1,3 @@
+color-link default              "{{colors.on_surface.default.hex}}"
+color-link comment              "{{colors.outline_variant.default.hex}}"
+
