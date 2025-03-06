@@ -1,2 +1,0 @@
-tab_title_template        "{fmt.bg.default}{fmt.fg._262828}{fmt.fg.default}{fmt.bg._262828}{fmt.fg._a79874} {title} {fmt.fg.default}{fmt.bg.default}{fmt.fg._262828}{fmt.fg.default}"
-active_tab_title_template "{fmt.bg.default}{fmt.fg._78a89d}{fmt.fg.default}{fmt.bg._78a89d}{fmt.fg._192425} {title} {fmt.fg.default}{fmt.bg.default}{fmt.fg._78a89d}{fmt.fg.default}"

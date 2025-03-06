@@ -17,6 +17,9 @@
     },
     {
       "class": "Rofi"
+    },
+    {
+      "class": "wofi"
     }
   ],
   "skiptaskbarhidden": [],

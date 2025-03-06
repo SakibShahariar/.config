@@ -1,9 +1,9 @@
 # ✨ General Setup
 # --------------------------------------------------------
 # Aliases and Editor Setup
-alias nano='micro'       # Make nano open in micro
-export MICRO_TRUECOLOR=1 # Enable true color support in Micro
-set -gx EDITOR micro     # Set default editor to micro
+alias nano='micro' 
+export MICRO_TRUECOLOR=1
+set -gx EDITOR micro
 
 # 🧩 Custom Path Modification
 # --------------------------------------------------------
@@ -12,19 +12,15 @@ set -e PATH
 
 # Set the correct PATH including ~/Scripts first, followed by system directories
 set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin ~/sbin
-export QT_QPA_PLATFORMTHEME=gtk2
+export QT_QPA_PLATFORMTHEME=qt5ct
 set -Ux PATH /sbin /usr/sbin $PATH
-set -Ux QT_STYLE_OVERRIDE Kvantum
+
+set -gx QT_SCALE_FACTOR 1.0
+set -gx QT_FONT_DPI 96        
 
 
 # Starship Initialization (Prompt)
 starship init fish | source
-
-# 🎨 Oh-My-Posh Theme Initialization (optional)
-# --------------------------------------------------------
-# oh-my-posh init fish --config $HOME/.poshthemes/night-owl.omp.json | source
-# night-owl
-# 1_shell
 
 # 🚀 Zoxide Setup for Fast Directory Navigation
 # --------------------------------------------------------
@@ -33,18 +29,6 @@ zoxide init fish | source
 # 🔧 Cargo Environment
 # --------------------------------------------------------
 # source $HOME/.cargo/env
-
-# 🌟 Greeting Message
-# --------------------------------------------------------
-function fish_greeting
-#   typewrite " 🌞 Hello, " (whoami) "!"
-#   typewrite " Welcome back! Today is " (date '+%A, %B %d, %Y') "."
-#   typewrite " Remember, every day is a new opportunity to shine! 🚀"
-#   typewrite ""
-end
-
-# ⌨️ Helper Functions
-# --------------------------------------------------------
 
 # Sudo override to use micro instead of nano
 function sudo
@@ -105,10 +89,10 @@ alias grub_edit="sudo nano /etc/default/grub"
 alias yy="yazi"
 alias yys="sudo yazi"
 alias ls='lsd $argv'
+alias kk='kitty @ set-colors --all ~/.config/kitty/colors.conf'
 
 # 🖥️ Interactive Session
 # --------------------------------------------------------
 if status is-interactive
     fastfetch --config ~/.config/fastfetch/pre.jsonc
-    # Commands for interactive sessions go here
 end
