@@ -42,11 +42,11 @@ format = "[─](fg:current_line)[](fg:color1 bg:color4)[󰉋](bg:color1 fg:co
 "Pictures" = " "
 
 [git_branch]
-format = "(fg:current_line)[](fg:color8 bg:color4)[$symbol](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $branch](fg:color3 bg:color4)[](fg:color4) "
-symbol = ''
+format = "(fg:current_line)[](fg:color8 bg:color4)[$symbol](bg:color8 fg:color5)[](fg:color8 bg:color4)[ $branch](fg:color3 bg:color4)"
+symbol = ''
 
 [git_status]
-format = '[](fg:color8 bg:color4)[$all_status$git_status](bg:color8 fg:color5)[](fg:color8 bg:color4)[](fg:color4)'
+format = '[$all_status](fg:green bg:color4)[ ](fg:color4)'
 conflicted = ' ='
 up_to_date = ''
 untracked = ' ?${count}'
@@ -65,9 +65,7 @@ disabled = true
 time_format = "%R" # Hour:Minute Format
 
 [cmd_duration]
-format = "(fg:current_line)[](fg:color8 bg:color4)[](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $duration](fg:color3 bg:color4)[](fg:color4) "
-min_time = 6  # Show only if command takes longer than 500ms
-disabled = false
+min_time = 5  # Show only if command takes longer than 500ms
 show_milliseconds = true
 
 [python]
