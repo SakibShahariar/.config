@@ -1,5 +1,5 @@
 format = '''
-$directory$git_branch$rust$python
+$directory$git_branch$rust$python$cmd_duration
 $character'''
 
 palette = 'colors'
@@ -36,8 +36,14 @@ format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 b
 
 [time]
 format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $time](fg:color3 bg:color4)[](fg:color4) "
-disabled = false
+disabled = true
 time_format = "%R" # Hour:Minute Format
+
+[cmd_duration]
+format = "[](fg:color8 bg:color4)[⏱ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $duration](fg:color3 bg:color4)[](fg:color4) "
+min_time = 6  # Show only if command takes longer than 500ms
+disabled = false
+show_milliseconds = true
 
 [python]
 format = "[](fg:color8 bg:color4)[${symbol}${version}](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5)( ${virtualenv})](fg:color3 bg:color4)[](fg:color4) "

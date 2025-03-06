@@ -4,6 +4,7 @@
 alias nano='micro' 
 export MICRO_TRUECOLOR=1
 set -gx EDITOR micro
+set -g fish_greeting ""
 
 # 🧩 Custom Path Modification
 # --------------------------------------------------------
@@ -17,7 +18,6 @@ set -Ux PATH /sbin /usr/sbin $PATH
 
 set -gx QT_SCALE_FACTOR 1.0
 set -gx QT_FONT_DPI 96        
-
 
 # Starship Initialization (Prompt)
 starship init fish | source
@@ -71,25 +71,32 @@ bind \cf 'fzf_files'  # Bind Ctrl+F to trigger fzf_files
 
 # 🛠️ Aliases
 # --------------------------------------------------------
-alias weather='curl wttr.in'
-alias dotgit="git --git-dir=$HOME/.dotfiles_repo/ --work-tree=$HOME"
-alias in="sudo dnf install"
+# 🛠️ System Utilities
+alias w='curl wttr.in'
+alias re='sudo dnf remove'
+alias in='sudo dnf install'
+alias cp='rsync -a --progress'
 alias grub_refresh="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
+alias grub_edit="sudo nano /etc/default/grub"
+
+# 🎨 Editor & Configuration
 alias fish_edit="micro ~/.config/fish/config.fish"
 alias fish_refresh="source ~/.config/fish/config.fish"
+alias kk='kitty @ set-colors --all ~/.config/kitty/colors.conf'
+
+# 🧑‍💻 Git & Dotfiles
+alias dotgit="git --git-dir=$HOME/.dotfiles_repo/ --work-tree=$HOME"
+
+# 📦 Miscellaneous
 alias anime="fastanime --icons --fzf --preview anilist"
 alias starwars="telnet towel.blinkenlights.nl"
 alias clock="tty-clock -c -C 2"
-alias kitty_edit="nano ~/.config/kitty/kitty.conf"
-alias ff="fastfetch"
-alias cp='rsync -a --progress'
-alias re='sudo dnf remove'
-alias pipes="pipes.sh -t 3"
-alias grub_edit="sudo nano /etc/default/grub"
 alias yy="yazi"
 alias yys="sudo yazi"
+
+# 🖥️ File Management
 alias ls='lsd $argv'
-alias kk='kitty @ set-colors --all ~/.config/kitty/colors.conf'
+alias fzf_files="fzf"
 
 # 🖥️ Interactive Session
 # --------------------------------------------------------
