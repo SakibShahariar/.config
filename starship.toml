@@ -1,29 +1,39 @@
-format = '''
-$directory$git_branch$rust$python$cmd_duration
-$character'''
+format = """
+[╭](fg:current_line)\
+$directory\
+$git_branch\
+$git_status\
+$rust\
+$python\
+$cmd_duration\
+$line_break\
+$character\
+"""
 
 palette = 'colors'
 
 [palettes.colors]
 mustard = '#af8700' # example
-color1 = '#82d3e2'
-color2 = '#00363d'
-color3 = '#bfc8ca'
-color4 = '#1b2122'
-color5 = '#00363d'
-color6 = '#0e1416'
-color7 = '#0e1416'
-color8 = '#82d3e2'
-color9 = '#bbc5ea'
+color1 = '#f8b1dd'
+color2 = '#4f1e42'
+color3 = '#d3c2ca'
+color4 = '#251e21'
+color5 = '#4f1e42'
+color6 = '#181115'
+color7 = '#181115'
+color8 = '#f8b1dd'
+color9 = '#f4b9a0'
 
 # Prompt symbols 
 [character]
+format = """
+[╰─$symbol](fg:current_line) """
 success_symbol = "[🞈](color9 bold)"
 error_symbol = "[🞈](@{error})"
 vicmd_symbol = "[🞈](#f9e2af)"
 
 [directory]
-format = "[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
+format = "[─](fg:current_line)[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -32,7 +42,22 @@ format = "[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)[ ](fg:color1 
 "Pictures" = " "
 
 [git_branch]
-format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $branch](fg:color3 bg:color4)[](fg:color4) "
+format = "(fg:current_line)[](fg:color8 bg:color4)[$symbol](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $branch](fg:color3 bg:color4)[](fg:color4) "
+symbol = ''
+
+[git_status]
+format = '[](fg:color8 bg:color4)[$all_status](bg:color8 fg:color5)[](fg:color8 bg:color4)[](fg:color4)'
+conflicted = ' ='
+up_to_date = ''
+untracked = ' ?${count}'
+stashed = ' $'
+modified = ' !${count}'
+staged = ' +'
+renamed = ' »'
+deleted = ' ✘'
+ahead = ' ⇡${count}'
+diverged = ' ⇕⇡${ahead_count}⇣${behind_count}'
+behind = ' ⇣${count}'
 
 [time]
 format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $time](fg:color3 bg:color4)[](fg:color4) "
@@ -40,7 +65,7 @@ disabled = true
 time_format = "%R" # Hour:Minute Format
 
 [cmd_duration]
-format = "[](fg:color8 bg:color4)[⏱ ](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $duration](fg:color3 bg:color4)[](fg:color4) "
+format = "(fg:current_line)[](fg:color8 bg:color4)[](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5) $duration](fg:color3 bg:color4)[](fg:color4) "
 min_time = 6  # Show only if command takes longer than 500ms
 disabled = false
 show_milliseconds = true
@@ -48,5 +73,6 @@ show_milliseconds = true
 [python]
 format = "[](fg:color8 bg:color4)[${symbol}${version}](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5)( ${virtualenv})](fg:color3 bg:color4)[](fg:color4) "
 symbol = '🐍'
+
 # pyenv_version_name = true
 pyenv_prefix = 'venv'

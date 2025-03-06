@@ -93,6 +93,7 @@ alias starwars="telnet towel.blinkenlights.nl"
 alias clock="tty-clock -c -C 2"
 alias yy="yazi"
 alias yys="sudo yazi"
+alias ff="fastfetch"
 
 # 🖥️ File Management
 alias ls='lsd $argv'
