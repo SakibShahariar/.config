@@ -46,7 +46,7 @@ format = "(fg:current_line)[](fg:color8 bg:color4)[$symbol](bg:color8 fg:colo
 symbol = ''
 
 [git_status]
-format = '[](fg:color8 bg:color4)[$all_status](bg:color8 fg:color5)[](fg:color8 bg:color4)[](fg:color4)'
+format = '[](fg:color8 bg:color4)[$all_status$git_status](bg:color8 fg:color5)[](fg:color8 bg:color4)[](fg:color4)'
 conflicted = ' ='
 up_to_date = ''
 untracked = ' ?${count}'
