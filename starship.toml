@@ -14,15 +14,15 @@ palette = 'colors'
 
 [palettes.colors]
 mustard = '#af8700' # example
-color1 = '#f8b1dd'
-color2 = '#4f1e42'
-color3 = '#d3c2ca'
-color4 = '#251e21'
-color5 = '#4f1e42'
-color6 = '#181115'
-color7 = '#181115'
-color8 = '#f8b1dd'
-color9 = '#f4b9a0'
+color1 = '#ffb786'
+color2 = '#502400'
+color3 = '#d7c3b7'
+color4 = '#261e19'
+color5 = '#502400'
+color6 = '#19120d'
+color7 = '#19120d'
+color8 = '#ffb786'
+color9 = '#c9ca93'
 
 # Prompt symbols 
 [character]
@@ -64,6 +64,7 @@ format = "[](fg:color8 bg:color4)[ ](bg:color8 fg:color5)[](fg:color8 b
 disabled = true
 time_format = "%R" # Hour:Minute Format
 
+
 [cmd_duration]
 min_time = 5  # Show only if command takes longer than 500ms
 show_milliseconds = true
@@ -71,6 +72,5 @@ show_milliseconds = true
 [python]
 format = "[](fg:color8 bg:color4)[${symbol}${version}](bg:color8 fg:color5)[](fg:color8 bg:color4)[(bg:color8 fg:color5)( ${virtualenv})](fg:color3 bg:color4)[](fg:color4) "
 symbol = '🐍'
-
 # pyenv_version_name = true
 pyenv_prefix = 'venv'
