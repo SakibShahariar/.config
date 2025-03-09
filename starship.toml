@@ -14,15 +14,15 @@ palette = 'colors'
 
 [palettes.colors]
 mustard = '#af8700' # example
-color1 = '#ffb786'
-color2 = '#502400'
-color3 = '#d7c3b7'
-color4 = '#261e19'
-color5 = '#502400'
-color6 = '#19120d'
-color7 = '#19120d'
-color8 = '#ffb786'
-color9 = '#c9ca93'
+color1 = '#ffb4a8'
+color2 = '#561e16'
+color3 = '#d8c2be'
+color4 = '#271d1c'
+color5 = '#561e16'
+color6 = '#1a1110'
+color7 = '#1a1110'
+color8 = '#ffb4a8'
+color9 = '#dec48c'
 
 # Prompt symbols 
 [character]
@@ -33,7 +33,7 @@ error_symbol = "[🞈](@{error})"
 vicmd_symbol = "[🞈](#f9e2af)"
 
 [directory]
-format = "[─](fg:current_line)[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
+format = "(fg:current_line)[](fg:color1 bg:color4)[ ](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
 
 [directory.substitutions]
 "Documents" = "󰈙 "

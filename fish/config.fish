@@ -16,8 +16,8 @@ set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /hom
 export QT_QPA_PLATFORMTHEME=qt5ct
 set -Ux PATH /sbin /usr/sbin $PATH
 
-set -gx QT_SCALE_FACTOR 1.0
-set -gx QT_FONT_DPI 96        
+set -Ux QT_SCALE_FACTOR 1
+set -Ux QT_QPA_PLATFORM wayland       
 
 # Starship Initialization (Prompt)
 starship init fish | source
@@ -80,8 +80,8 @@ alias grub_refresh="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias grub_edit="sudo nano /etc/default/grub"
 
 # 🎨 Editor & Configuration
-alias fish_edit="micro ~/.config/fish/config.fish"
-alias fish_refresh="source ~/.config/fish/config.fish"
+alias fe="micro ~/.config/fish/config.fish"
+alias fr="source ~/.config/fish/config.fish"
 alias kk='kitty @ set-colors --all ~/.config/kitty/colors.conf'
 
 # 🧑‍💻 Git & Dotfiles
@@ -94,6 +94,7 @@ alias clock="tty-clock -c -C 2"
 alias yy="yazi"
 alias yys="sudo yazi"
 alias ff="fastfetch"
+alias rr="random-wallpaper-matugen.fish"
 
 # 🖥️ File Management
 alias ls='lsd $argv'
