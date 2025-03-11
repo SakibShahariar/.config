@@ -40,6 +40,8 @@ format = "(fg:current_line)[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
+"Videos" = "󰎈 "
+".config" = " "
 
 [git_branch]
 format = "(fg:current_line)[](fg:color8 bg:color4)[$symbol](bg:color8 fg:color5)[](fg:color8 bg:color4)[ $branch](fg:color3 bg:color4)"

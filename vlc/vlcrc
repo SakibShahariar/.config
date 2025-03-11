@@ -1547,10 +1547,10 @@
 [skins2] # Skinnable Interface
 
 # Skin to use (string)
-#skins2-last=
+skins2-last=/usr/share/vlc/skins2/default.vlt
 
 # Config of last used skin (string)
-#skins2-config=
+skins2-config=["aboutwin" "aboutwinwin-main" 1547 877 330 171 0]["eqwin" "eqwin-main" 1547 877 330 171 0]["fullscreenController" "fsc_normal" 1462 1739 500 130 0]["main" "normal" 261 172 1676 1878 1]["plwin" "plwin-normal" 1633 884 500 350 0]
 
 # Enable transparency effects (boolean)
 #skins2-transparency=0
@@ -1585,7 +1585,7 @@
 #qt-fs-opacity=0.800000
 
 # Resize interface to the native video size (boolean)
-#qt-video-autoresize=1
+qt-video-autoresize=0
 
 # Show playing item name in window title (boolean)
 #qt-name-in-title=1
@@ -2691,10 +2691,10 @@ qt-privacy-ask=0
 #sout-x264-stats=x264_2pass.log
 
 # Default preset setting used (string)
-#sout-x264-preset=
+sout-x264-preset=ultrafast
 
 # Default tune setting used (string)
-#sout-x264-tune=
+sout-x264-tune=film
 
 # x264 advanced options (string)
 #sout-x264-options=
@@ -2949,7 +2949,7 @@ qt-privacy-ask=0
 #alsa-audio-channels=6
 
 # Software gain (float)
-#alsa-gain=1.000000
+alsa-gain=1.331000
 
 [afile] # File audio output
 
@@ -4044,7 +4044,7 @@ qt-privacy-ask=0
 #audio-time-stretch=1
 
 # Audio output module (string)
-#aout=
+aout=alsa
 
 # Media role (string)
 #role=video
@@ -4455,7 +4455,7 @@ qt-privacy-ask=0
 #packetizer=
 
 # VoD server module (string)
-#vod-server=
+vod-server=any
 
 # Use a plugins cache (boolean)
 #plugins-cache=1
@@ -4500,7 +4500,7 @@ qt-privacy-ask=0
 #playlist-cork=1
 
 # Allow only one running instance (boolean)
-#one-instance=0
+one-instance=1
 
 # Use only one instance when started from file manager (boolean)
 #one-instance-when-started-from-file=1
@@ -4548,7 +4548,7 @@ metadata-network-access=1
 #pidfile=
 
 # Show advanced options (boolean)
-#advanced=0
+advanced=1
 
 # Interface interaction (boolean)
 #interact=1

@@ -1,3 +1,24 @@
-2025/03/09-18:38:03.173 4 Reusing MANIFEST /home/sakib/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2025/03/09-18:38:03.179 4 Recovering log #10
-2025/03/09-18:38:03.212 4 Reusing old log /home/sakib/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000010.log 
+2025/03/11-11:41:03.565 4 Reusing MANIFEST /home/sakib/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2025/03/11-11:41:03.570 4 Recovering log #25
+2025/03/11-11:41:03.571 4 Reusing old log /home/sakib/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000025.log 
+2025/03/11-11:52:08.490 6 Level-0 table #29: started
+2025/03/11-11:52:08.505 6 Level-0 table #29: 15705 bytes OK
+2025/03/11-11:52:08.516 6 Delete type=0 #25
+2025/03/11-12:01:10.759 4 Level-0 table #31: started
+2025/03/11-12:01:10.770 4 Level-0 table #31: 15521 bytes OK
+2025/03/11-12:01:10.794 4 Delete type=0 #28
+2025/03/11-12:01:10.797 4 Compacting 4@0 + 1@1 files
+2025/03/11-12:01:10.818 4 Generated table #32@0: 386 keys, 55497 bytes
+2025/03/11-12:01:10.818 4 Compacted 4@0 + 1@1 files => 55497 bytes
+2025/03/11-12:01:10.832 4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/03/11-12:01:10.851 4 Delete type=2 #20
+2025/03/11-12:01:10.851 4 Delete type=2 #23
+2025/03/11-12:01:10.852 4 Delete type=2 #26
+2025/03/11-12:01:10.852 4 Delete type=2 #29
+2025/03/11-12:01:10.852 4 Delete type=2 #31
+2025/03/11-13:39:23.320 4 Level-0 table #34: started
+2025/03/11-13:39:23.325 4 Level-0 table #34: 18214 bytes OK
+2025/03/11-13:39:23.334 4 Delete type=0 #30
+2025/03/11-14:26:30.230 6 Level-0 table #36: started
+2025/03/11-14:26:30.233 6 Level-0 table #36: 29940 bytes OK
+2025/03/11-14:26:30.239 6 Delete type=0 #33

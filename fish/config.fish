@@ -16,7 +16,7 @@ set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /hom
 export QT_QPA_PLATFORMTHEME=qt5ct
 set -Ux PATH /sbin /usr/sbin $PATH
 
-set -Ux QT_SCALE_FACTOR 1
+set -Ux QT_SCALE_FACTOR 0.8
 set -Ux QT_QPA_PLATFORM wayland       
 
 # Starship Initialization (Prompt)

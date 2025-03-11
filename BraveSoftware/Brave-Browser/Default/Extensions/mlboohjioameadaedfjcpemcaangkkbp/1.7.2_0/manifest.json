@@ -1,0 +1,28 @@
+{
+   "background": {
+      "page": "content.js"
+   },
+   "browser_action": {
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "exclude_globs": [ "*.pdf" ],
+      "js": [ "content.js" ],
+      "matches": [ "http://*/*", "https://*/*", "ftp://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Fix the slow scroll speed in Linux Chrome by setting it to the Windows value",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "32": "icon_32.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0LtFtEzp3Djlh3agXBtgpwc1McKzCKUq8j5WCu3+ni+RrZxUJEyRK/5qwIOuLflSEm0B14GhpbTMGm0LaVdlyip6gSDmelTNJSDql1pRfeJpAEB7w08nd/Qc/xXlUNDuRY9hiTDnyK5g+/h+wnIWHXRIQWcnj/3m4nRy/ySe4VUZhJbmqbNLFlBzBJONBiBuyZ2GImM/Q7BcctgKyOxvQeTgoG0wHMBVyiVGbTC7be5Upt8rCyF4cAGq0lNUIq9nv0UaIV3kZJ11UyNAGtvb7n39oGssoCV0R3wwamFOb2KzJ7QUrQc+/R9GK5rvoj/XAgsPC9gnc+LWNd14SCFrhQIDAQAB",
+   "manifest_version": 2,
+   "name": "Linux Scroll Speed Fix",
+   "permissions": [ "storage", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.7.2"
+}

@@ -14,15 +14,15 @@ palette = 'colors'
 
 [palettes.colors]
 mustard = '#af8700' # example
-color1 = '#ffb4a8'
-color2 = '#561e16'
-color3 = '#d8c2be'
-color4 = '#271d1c'
-color5 = '#561e16'
-color6 = '#1a1110'
-color7 = '#1a1110'
-color8 = '#ffb4a8'
-color9 = '#dec48c'
+color1 = '#bac3ff'
+color2 = '#222c61'
+color3 = '#c6c5d0'
+color4 = '#1f1f25'
+color5 = '#222c61'
+color6 = '#121318'
+color7 = '#121318'
+color8 = '#bac3ff'
+color9 = '#e5bad8'
 
 # Prompt symbols 
 [character]
@@ -33,13 +33,15 @@ error_symbol = "[🞈](@{error})"
 vicmd_symbol = "[🞈](#f9e2af)"
 
 [directory]
-format = "(fg:current_line)[](fg:color1 bg:color4)[ ](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
+format = "(fg:current_line)[](fg:color1 bg:color4)[󰉋](bg:color1 fg:color2)[ ](fg:color1 bg:color4)[$path ](fg:color3 bg:color4)[ ](fg:color4)"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
+"Videos" = "󰎈 "
+".config" = " "
 
 [git_branch]
 format = "(fg:current_line)[](fg:color8 bg:color4)[$symbol](bg:color8 fg:color5)[](fg:color8 bg:color4)[ $branch](fg:color3 bg:color4)"
