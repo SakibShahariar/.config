@@ -1,25 +1,25 @@
-2025/03/11-11:33:55.228 47b5 Reusing MANIFEST /home/sakib/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_kisskh.co_0.indexeddb.leveldb/MANIFEST-000001
-2025/03/11-11:33:55.233 47b5 Recovering log #243
-2025/03/11-11:33:55.235 47b5 Reusing old log /home/sakib/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_kisskh.co_0.indexeddb.leveldb/000243.log 
-2025/03/11-11:33:55.235 47b5 Delete type=2 #242
-2025/03/11-11:33:55.326 47c5 Level-0 table #248: started
-2025/03/11-11:33:55.333 47c5 Level-0 table #248: 11169 bytes OK
-2025/03/11-11:33:55.338 47c5 Delete type=0 #243
-2025/03/11-11:33:55.339 47b6 Manual compaction at level-0 from '\x00M\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00N\x00\x00\x00' @ 0 : 0; will stop at '\x00M\x00\x00\x05' @ 7847 : 1
-2025/03/11-11:33:55.340 47b6 Compacting 1@0 + 1@1 files
-2025/03/11-11:33:55.346 47b6 Generated table #249@0: 537 keys, 7123 bytes
-2025/03/11-11:33:55.346 47b6 Compacted 1@0 + 1@1 files => 7123 bytes
-2025/03/11-11:33:55.356 47b6 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/03/11-11:33:55.357 47b6 Delete type=2 #248
-2025/03/11-11:33:55.359 47b6 Manual compaction at level-0 from '\x00M\x00\x00\x05' @ 7847 : 1 .. '\x00N\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/03/11-11:33:56.097 47b7 Level-0 table #251: started
-2025/03/11-11:33:56.125 47b7 Level-0 table #251: 910 bytes OK
-2025/03/11-11:33:56.134 47b7 Delete type=2 #245
-2025/03/11-11:33:56.134 47b7 Delete type=0 #247
-2025/03/11-11:33:56.136 47b5 Manual compaction at level-0 from '\x00N\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00O\x00\x00\x00' @ 0 : 0; will stop at '\x00N\x00\x00\x05' @ 7880 : 1
-2025/03/11-11:33:56.137 47b5 Compacting 1@0 + 1@1 files
-2025/03/11-11:33:56.144 47b5 Generated table #252@0: 537 keys, 7124 bytes
-2025/03/11-11:33:56.144 47b5 Compacted 1@0 + 1@1 files => 7124 bytes
-2025/03/11-11:33:56.151 47b5 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/03/11-11:33:56.152 47b5 Delete type=2 #251
-2025/03/11-11:33:56.152 47b7 Manual compaction at level-0 from '\x00N\x00\x00\x05' @ 7880 : 1 .. '\x00O\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/15-22:32:32.870 1d42 Reusing MANIFEST /home/sakib/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_kisskh.co_0.indexeddb.leveldb/MANIFEST-000001
+2025/03/15-22:32:32.871 1d42 Recovering log #298
+2025/03/15-22:32:32.872 1d42 Reusing old log /home/sakib/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_kisskh.co_0.indexeddb.leveldb/000298.log 
+2025/03/15-22:32:32.872 1d42 Delete type=2 #297
+2025/03/15-22:32:32.888 1d44 Level-0 table #303: started
+2025/03/15-22:32:32.890 1d44 Level-0 table #303: 12802 bytes OK
+2025/03/15-22:32:32.895 1d44 Delete type=0 #298
+2025/03/15-22:32:32.895 1d42 Manual compaction at level-0 from '\x00\\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00]\x00\x00\x00' @ 0 : 0; will stop at '\x00\\x00\x00\x05' @ 9804 : 1
+2025/03/15-22:32:32.895 1d42 Compacting 1@0 + 1@1 files
+2025/03/15-22:32:32.898 1d42 Generated table #304@0: 212 keys, 4347 bytes
+2025/03/15-22:32:32.898 1d42 Compacted 1@0 + 1@1 files => 4347 bytes
+2025/03/15-22:32:32.901 1d42 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/03/15-22:32:32.901 1d42 Delete type=2 #303
+2025/03/15-22:32:32.902 1d42 Manual compaction at level-0 from '\x00\\x00\x00\x05' @ 9804 : 1 .. '\x00]\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/03/15-22:32:33.159 1d44 Level-0 table #306: started
+2025/03/15-22:32:33.162 1d44 Level-0 table #306: 766 bytes OK
+2025/03/15-22:32:33.165 1d44 Delete type=2 #300
+2025/03/15-22:32:33.166 1d44 Delete type=0 #302
+2025/03/15-22:32:33.166 1d44 Manual compaction at level-0 from '\x00]\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00^\x00\x00\x00' @ 0 : 0; will stop at '\x00]\x00\x00\x05' @ 9837 : 1
+2025/03/15-22:32:33.166 1d44 Compacting 1@0 + 1@1 files
+2025/03/15-22:32:33.170 1d44 Generated table #307@0: 212 keys, 4240 bytes
+2025/03/15-22:32:33.170 1d44 Compacted 1@0 + 1@1 files => 4240 bytes
+2025/03/15-22:32:33.173 1d44 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/03/15-22:32:33.173 1d44 Delete type=2 #306
+2025/03/15-22:32:33.174 1d54 Manual compaction at level-0 from '\x00]\x00\x00\x05' @ 9837 : 1 .. '\x00^\x00\x00\x00' @ 0 : 0; will stop at (end)
