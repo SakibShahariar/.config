@@ -19,6 +19,10 @@ set -Ux PATH /sbin /usr/sbin $PATH
 set -Ux QT_SCALE_FACTOR 0.8
 set -Ux QT_QPA_PLATFORM wayland       
 
+set -x GOPATH (go env GOPATH)
+set -x GOBIN $GOPATH/bin
+set -x PATH $PATH $GOBIN
+
 # Starship Initialization (Prompt)
 starship init fish | source
 
@@ -75,7 +79,7 @@ bind \cf 'fzf_files'  # Bind Ctrl+F to trigger fzf_files
 alias w='curl wttr.in'
 alias re='sudo dnf remove'
 alias in='sudo dnf install'
-alias cp='rsync -a --progress'
+# alias cp='rsync -a --progress'
 alias grub_refresh="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias grub_edit="sudo nano /etc/default/grub"
 

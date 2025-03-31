@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "campaigns": [
+    {
+      "campaignId": "1c604ecd-ad27-4eec-9059-1516c7f4a6c3",
+      "logo": {
+        "imageUrl": "2e6d2519-8058-4cbc-aeac-436728b2da6d.png",
+        "destinationUrl": "https://brave.com/podcast/e64/?mtm_source=brave-browser&mtm_medium=brave-ntp&mtm_campaign=brave-technologist&mtm_content=podcast",
+        "alt": "The Brave Technologist Podcast: Episode 64 - Building Trust i AI Blockchain, Decentralized Finance and JPMorganChase - Listen Now",
+        "companyName": "Brave Software"
+      },
+      "wallpapers": [
+        {
+          "imageUrl": "580baea7-d701-4c58-89ad-89342a8dd517.jpg",
+          "creativeInstanceId": "a6bbd449-555c-4868-8634-59e7512d9a9b",
+          "focalPoint": {
+            "x": 1280,
+            "y": 720
+          }
+        }
+      ]
+    }
+  ],
+  "campaigns2": [
+    {
+      "campaignId": "1c604ecd-ad27-4eec-9059-1516c7f4a6c3",
+      "logo": {
+        "imageUrl": "2e6d2519-8058-4cbc-aeac-436728b2da6d.png",
+        "destinationUrl": "https://brave.com/podcast/e64/?mtm_source=brave-browser&mtm_medium=brave-ntp&mtm_campaign=brave-technologist&mtm_content=podcast",
+        "alt": "The Brave Technologist Podcast: Episode 64 - Building Trust i AI Blockchain, Decentralized Finance and JPMorganChase - Listen Now",
+        "companyName": "Brave Software"
+      },
+      "wallpapers": [
+        {
+          "imageUrl": "580baea7-d701-4c58-89ad-89342a8dd517.jpg",
+          "creativeInstanceId": "a6bbd449-555c-4868-8634-59e7512d9a9b",
+          "focalPoint": {
+            "x": 1280,
+            "y": 720
+          }
+        }
+      ]
+    }
+  ]
+}

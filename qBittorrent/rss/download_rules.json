@@ -1,156 +1,4 @@
 {
-    "Ao no Exorcist": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "15 Mar 2025 18:37:03 +0000",
-        "mustContain": "Ao no Exorcist",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
-    "Ao no Hako": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=Ember_Encodes"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "08 Mar 2025 18:34:57 +0000",
-        "mustContain": "Ao no Hako",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
-    "Dr. Stone S4": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "20 Mar 2025 15:36:28 +0000",
-        "mustContain": "Dr. Stone S4",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
-    "Ishura": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=DKB0512"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "19 Mar 2025 21:41:47 +0000",
-        "mustContain": "Ishura",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
     "Medalist": {
         "addPaused": null,
         "affectedFeeds": [
@@ -160,7 +8,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "15 Mar 2025 18:36:36 +0000",
+        "lastMatch": "30 Mar 2025 12:06:32 +0000",
         "mustContain": "Medalist",
         "mustNotContain": "DSNP",
         "previouslyMatchedEpisodes": [
@@ -198,160 +46,8 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "11 Mar 2025 16:14:42 +0000",
+        "lastMatch": "24 Mar 2025 15:47:16 +0000",
         "mustContain": "My Happy Marriage",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
-    "Re Zero": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "19 Mar 2025 15:21:31 +0000",
-        "mustContain": "Re Zero",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
-    "Rurouni Kenshin": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "20 Mar 2025 19:10:51 +0000",
-        "mustContain": "Rurouni Kenshin",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
-    "Shangri-La Frontier": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "16 Mar 2025 20:11:37 +0000",
-        "mustContain": "Shangri-La Frontier",
-        "mustNotContain": "",
-        "previouslyMatchedEpisodes": [
-        ],
-        "priority": 0,
-        "savePath": "",
-        "smartFilter": false,
-        "torrentContentLayout": null,
-        "torrentParams": {
-            "category": "",
-            "download_limit": -1,
-            "download_path": "",
-            "inactive_seeding_time_limit": -2,
-            "operating_mode": "AutoManaged",
-            "ratio_limit": -2,
-            "save_path": "",
-            "seeding_time_limit": -2,
-            "share_limit_action": "Default",
-            "skip_checking": false,
-            "ssl_certificate": "",
-            "ssl_dh_params": "",
-            "ssl_private_key": "",
-            "tags": [
-            ],
-            "upload_limit": -1
-        },
-        "useRegex": false
-    },
-    "Solo Leveling": {
-        "addPaused": null,
-        "affectedFeeds": [
-            "https://nyaa.si/?page=rss&u=AkihitoSubsWeeklies"
-        ],
-        "assignedCategory": "",
-        "enabled": true,
-        "episodeFilter": "",
-        "ignoreDays": 0,
-        "lastMatch": "15 Mar 2025 18:13:03 +0000",
-        "mustContain": "Solo Leveling",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
         ],
@@ -388,7 +84,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "14 Mar 2025 17:11:45 +0000",
+        "lastMatch": "28 Mar 2025 17:05:11 +0000",
         "mustContain": "Kusuriya no Hitorigoto",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -426,7 +122,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "16 Mar 2025 19:47:39 +0000",
+        "lastMatch": "30 Mar 2025 09:43:58 +0000",
         "mustContain": "Jibaku Shounen Hanako-kun",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [
@@ -464,7 +160,7 @@
         "enabled": true,
         "episodeFilter": "",
         "ignoreDays": 0,
-        "lastMatch": "16 Mar 2025 21:28:00 +0000",
+        "lastMatch": "23 Mar 2025 20:01:38 +0000",
         "mustContain": "Yami Shibai",
         "mustNotContain": "",
         "previouslyMatchedEpisodes": [

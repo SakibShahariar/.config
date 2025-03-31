@@ -3,21 +3,6 @@
 [templates.kitty]
 input_path = "~/.config/matugen/templates/kitty.conf"
 output_path = "~/.config/kitty/colors.conf"
-# [templates.gtk3]
-# input_path = '~/.config/matugen/templates/gtk-colors.css'
-# output_path = '~/.themes/Andromeda-standard-buttons/gtk-3.0/colors.css'
-
-# [templates.gtk4]
-# input_path = '~/.config/matugen/templates/gtk-colors.css'
-# output_path = '~/.themes/Andromeda-standard-buttons/gtk-4.0/colors.css'
-
-# [templates.gtk3_theme]
-# input_path = '~/.config/matugen/templates/gtk-colors.css'
-# output_path = '~/.config/gtk-3.0/colors.css'
-
-# [templates.gtk4_theme]
-# input_path = '~/.config/matugen/templates/gtk-colors.css'
-# output_path = '~/.config/gtk-4.0/colors.css'
 
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
