@@ -44,6 +44,6 @@ output_path = '~/.config/mpv/color.py'
 input_path = '~/.config/matugen/templates/mpv-config-color.conf'
 output_path = '~/.config/mpv/mpv.conf'
 
-[templates.yazi]
-input_path = '~/.config/matugen/templates/yazi-theme.toml'
-output_path = '~/.config/yazi/theme.toml'
+[templates.themes]
+input_path = '~/.config/matugen/templates/a.css'
+output_path = '~/.themes/a.css'

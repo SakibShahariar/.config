@@ -1567,7 +1567,7 @@ skins2-config=["aboutwin" "aboutwinwin-main" 1547 877 330 171 0]["eqwin" "eqwin-
 #qt-minimal-view=0
 
 # Systray icon (boolean)
-#qt-system-tray=1
+qt-system-tray=0
 
 # Show notification popup on track change (integer)
 #qt-notification=1
@@ -1630,7 +1630,7 @@ qt-privacy-ask=0
 #qt-bgcone-expands=0
 
 # Allow automatic icon changes (boolean)
-#qt-icon-change=0
+qt-icon-change=1
 
 # Maximum Volume displayed (integer)
 #qt-max-volume=125
@@ -2949,7 +2949,7 @@ sout-x264-tune=film
 #alsa-audio-channels=6
 
 # Software gain (float)
-#alsa-gain=1.000000
+alsa-gain=0.729000
 
 [afile] # File audio output
 
