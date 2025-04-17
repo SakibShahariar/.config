@@ -82,6 +82,7 @@ alias in='sudo dnf install'
 # alias cp='rsync -a --progress'
 alias grub_refresh="sudo grub2-mkconfig -o /boot/grub2/grub.cfg"
 alias grub_edit="sudo nano /etc/default/grub"
+alias cd="z"
 
 # 🎨 Editor & Configuration
 alias fe="micro ~/.config/fish/config.fish"
@@ -101,7 +102,7 @@ alias ff="fastfetch"
 alias rr="random-wallpaper-matugen.fish"
 
 # 🖥️ File Management
-alias ls='lsd $argv'
+alias ls='lsd -a $argv'
 alias fzf_files="fzf"
 
 # 🖥️ Interactive Session
