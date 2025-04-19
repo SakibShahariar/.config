@@ -1,5 +1,5 @@
-color-link default "#f1dfdb"
-color-link comment "#534340"
+color-link default "#e6e2d5"
+color-link comment "#48473a"
 
 color-link identifier "#89b4fa"
 color-link identifier.class "#89b4fa"

@@ -13,8 +13,6 @@ set -e PATH
 
 # Set the correct PATH including ~/Scripts first, followed by system directories
 set -Ux PATH $PATH ~/Scripts /usr/bin /usr/local/bin /home/sakib/.local/bin /home/sakib/.cargo/bin /usr/local/sbin ~/sbin
-export QT_QPA_PLATFORMTHEME=qt5ct
-set -Ux PATH /sbin /usr/sbin $PATH
 
 set -Ux QT_SCALE_FACTOR 0.8
 set -Ux QT_QPA_PLATFORM wayland       
